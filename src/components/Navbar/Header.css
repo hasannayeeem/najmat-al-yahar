@@ -1,0 +1,38 @@
+.quality-first::before {
+  background: #008aff;
+  top: 0;
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  display: block;
+  content: "";
+}
+.quality-first::after {
+  content: "";
+  position: absolute;
+  background: #2e6abf;
+  width: 3px;
+  height: 30px;
+  top: 0;
+  left: 0;
+}
+.sk-akij-uddin::before {
+    background: #008aff;
+    right: 0;
+    position: absolute;
+    width: 3px;
+    height: 30px;
+    display: block;
+    content: "";
+    bottom: 2px;
+}
+.sk-akij-uddin::after {
+    content: "";
+    position: absolute;
+    background: #008aff;
+    width: 40px;
+    height: 3px;
+    bottom: 2px;
+    right: 0;
+}

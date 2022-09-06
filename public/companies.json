@@ -1,0 +1,51 @@
+[
+    {
+      "_id": "623853b2614a311d5abafdd1",
+      "index": 0,
+      "title": "Najmat-Al-Yahar",
+      "type": "New Trending",
+      "img": "https://i.ibb.co/PtSL4fc/najmatone.png",
+      "duration": "90 days",
+      "assignment": "9 Assignment",
+      "discount": "17% Discount",
+      "price": "$32",
+      "description": "We are providing big mall project for you. You can choose our designed projects or meet our engineers for custom build your project"
+    },
+    {
+      "_id": "623853b2578d1ae0de9e6ad5",
+      "index": 1,
+      "title": "Najmat-Al-Yahar",
+      "type": "New Trending",
+      "img": "https://i.ibb.co/xsSGtyD/najmat-Two.png",
+      "duration": "90 days",
+      "assignment": "9 Assignment",
+      "discount": "17% Discount",
+      "price": "$32",
+      "description": "We are providing repairing service for your old project. You can choose our designed projects or meet our engineers for custom build your project"
+    },
+    {
+      "_id": "623853b2d2ee71fb149b76c7",
+      "index": 2,
+      "title": "Najmat-Al-Yahar",
+      "type": "New Trending",
+      "img": "https://i.ibb.co/84xqZq0/najmatthree.png",
+      "duration": "90 days",
+      "assignment": "9 Assignment",
+      "discount": "17% Discount",
+      "price": "$32",
+      "description": "We do home building engineering project for you. You can choose our designed projects or meet our engineers for custom build your project"
+    },
+    {
+      "_id": "623853b2e91c88cde579245e",
+      "index": 3,
+      "title": "Najmat-Al-Yahar",
+      "type": "New Trending",
+      "img": "https://i.ibb.co/RT4m3WN/najmatfour.png",
+      "duration": "90 days",
+      "assignment": "9 Assignment",
+      "discount": "17% Discount",
+      "price": "$32",
+      "description": "We have lot of Architecture Engineers. You can Design your project from us. We providing lifetime support for every customer."
+    }
+  ]
+  

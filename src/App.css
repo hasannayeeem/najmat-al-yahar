@@ -1,0 +1,24 @@
+
+.App {
+  text-align: center;
+}
+
+.dark-theme{
+  background:  rgb(25, 34, 60);
+  /* color: #297bbe; */
+}
+
+/* scrollbar design here */
+html::-webkit-scrollbar{
+  width: 0.4rem;
+}
+
+html::-webkit-scrollbar-track{
+  background:rgba(159, 159, 159, 0.187);
+}
+
+html::-webkit-scrollbar-thumb{
+  background:#ff0000;
+  border-radius: 10px;
+  border: 1px outset #fffb00;
+}
