@@ -14,27 +14,27 @@ const Address = () => {
                         <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 p-4'>
                             <div>
                                 <label className='font-medium'>Your Current Country</label>
-                                <input type="text" placeholder="Bangladesh" class="input input-bordered w-full max-w-xs" />
+                                <input type="text" placeholder="Bangladesh" className="input input-bordered w-full max-w-xs" />
                             </div>
                             <div>
                                 <label className='font-medium'>Your Current Town</label>
-                                <input type="text" placeholder="Dhaka" class="input input-bordered w-full max-w-xs" />
+                                <input type="text" placeholder="Dhaka" className="input input-bordered w-full max-w-xs" />
                             </div>
                             <div>
                                 <label className='font-medium'>Your Current Zip Code</label>
-                                <input type="text" placeholder="64611" class="input input-bordered w-full max-w-xs" />
+                                <input type="text" placeholder="64611" className="input input-bordered w-full max-w-xs" />
                             </div>
                             <div>
                                 <label className='font-medium'>Your Permanent Country</label>
-                                <input type="text" placeholder="USA" class="input input-bordered w-full max-w-xs" />
+                                <input type="text" placeholder="USA" className="input input-bordered w-full max-w-xs" />
                             </div>
                             <div>
                                 <label className='font-medium'>Your Permanent Town</label>
-                                <input type="text" placeholder="New York" class="input input-bordered w-full max-w-xs" />
+                                <input type="text" placeholder="New York" className="input input-bordered w-full max-w-xs" />
                             </div>
                             <div>
                                 <label className='font-medium'>Your Permanent Zip</label>
-                                <input type="text" placeholder="75482" class="input input-bordered w-full max-w-xs" />
+                                <input type="text" placeholder="75482" className="input input-bordered w-full max-w-xs" />
                             </div>
                         </div>
                         <div className='text-center mb-1'>

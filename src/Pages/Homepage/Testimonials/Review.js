@@ -1,19 +1,25 @@
-// import React from 'react';
+import React from 'react';
 
-// const Review = ({review}) => {
-     
-//      return (
-//           <div className='bg-teal-100 w-[320px] mb-5 sm:mb-0 p-8 rounded-tr-3xl rounded-bl-3xl'>
-//                <q>{review.comment}</q>
-//                <div className="flex items-center mt-3">
-//                     <img className='h-14 w-14 rounded-full mr-3' src={review.img} alt="" />
-//                     <div>
-//                          <h4 className='font-semibold leading-none mb-1 text-teal-900'>{review.name}</h4>
-//                          <h5 className='leading-none'>{review.position}</h5>
-//                     </div>
-//                </div>
-//           </div>
-//      );
-// };
+const Review = ({review}) => {
+    return (
+        <div  className="card lg:max-w-lg bg-base-100 shadow-xl">
+            <div  className="card-body">
+                <p>{review.review}</p>
+                <p className='font-semibold'>Rating: {review.rating}</p>
+                <div  className="card-actions items-center mt-6">
+                    <div  className="avatar ">
+                        <div  className="w-12 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 mr-5">
+                            <img src={review.img} alt=""/>
+                        </div>
+                    </div>
+                    <div  className=''>
+                        <h4  className='text-xl'>{review.name}</h4>
+                        <p><small>{review.location}</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
 
-// export default Review;
+export default Review;

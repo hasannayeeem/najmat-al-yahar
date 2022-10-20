@@ -62,7 +62,7 @@ const Register = () => {
     }
 
     return (
-        <section className='sm:mt-[129px] mt-[80px]'>
+        <section className='py-8'>
             <div className="font-family-karla">
 
                 <div className="w-full flex flex-wrap">

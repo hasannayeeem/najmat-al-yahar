@@ -13,7 +13,6 @@ const ManageBooks = () => {
   const [bookUpadateLoadin, setBookUpadateLoadin] = useState(false);
   const [manageBooksModal, setManageBooksModal] = useState(false);
   const [manageAddModal, setManageAddModal] = useState(false);
-  // console.log(manageBooksModal);
 
   // get api
   useEffect(() => {
@@ -125,7 +124,7 @@ const ManageBooks = () => {
         {/* <!-- The button to open modal --> */}
         <label
           onClick={() => setManageAddModal(true)}
-          for="AddBook"
+          htmlFor="AddBook"
           className="btn btn-sm btn-outline btn-accent font-bold mb-2 text-lg text-primary duration-1000"
         >
           ADD NEW BOOK
@@ -139,7 +138,7 @@ const ManageBooks = () => {
                 {/* updated form */}
                 <form className="w-10/12 mx-auto" onSubmit={handelAddNewBook}>
                   <label
-                    for="AddBook"
+                    htmlFor="AddBook"
                     className="btn btn-sm btn-circle absolute right-2 top-2"
                   >
                     ✕
@@ -336,7 +335,7 @@ const ManageBooks = () => {
                     {/* <!-- The button to open modal --> */}
                     <label
                       onClick={() => setManageBooksModal(true)}
-                      for={_id}
+                      htmlFor={_id}
                       className="btn modal-button btn-outline btn-xs btn-warning h-5 sm:h-6  sm:px-3 uppercase  rounded-full text-white duration-1000"
                     >
                       Edit
@@ -354,7 +353,7 @@ const ManageBooks = () => {
                             {/* updated form */}
                             <form onSubmit={handleUpdateBook}>
                               <label
-                                for={_id}
+                                htmlFor={_id}
                                 className="btn btn-sm btn-circle absolute right-2 top-2"
                               >
                                 ✕

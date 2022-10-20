@@ -2,9 +2,25 @@ import React, { useContext, useEffect, useState } from 'react'
 import useServices from '../../../hooks/useServices'
 import Card from '../Card/Card'
 import { DarkModeContext } from '../../../App'
+import { BsJournalBookmarkFill } from 'react-icons/bs'
 
 const Cards = () => {
 	const [services] = useServices([])
+	const categories= [];
+	let isExist = false;
+	for(let i=0; i<=services?.length; i++){
+		isExist = false;
+		for(let j=0; j<= categories.length; j++){
+			if(services[i]?.category===categories[j]?.category){
+				isExist= true;
+				break;
+			}
+		}
+		if(!isExist){
+			categories.push(services[i]);
+		}
+	}
+	// console.log(categories);
 	const [darkMode, setDarkMode] = useContext(DarkModeContext)
 	return (
 		<div id='services'>
@@ -23,7 +39,7 @@ const Cards = () => {
 			</div>
 			<div className='flex justify-center items-center py-20'>
 				<div className='md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 space-y-4 md:space-y-0'>
-					{services.map(service => (
+					{categories?.map(service => (
 						<Card service={service} key={service._id}></Card>
 					))}
 				</div>

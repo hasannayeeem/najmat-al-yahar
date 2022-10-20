@@ -14,7 +14,7 @@ const NotificationModal = () => {
 						className="sm:w-10/12 w-11/12 py-3 mx-auto sm:mx-0 text-left"
 					>
 						<label
-							for="notificattonModal"
+							htmlFor="notificattonModal"
 							className="btn btn-sm btn-circle absolute right-5 top-5"
 						>
 							✕

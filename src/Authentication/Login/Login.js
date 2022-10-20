@@ -64,8 +64,8 @@ const Login = () => {
 	}
 
 	return (
-		<section className='sm:mt-[129px] mt-[80px] '>
-			<div className='bg-white font-family-karla'>
+		<section className=''>
+			<div className={`bg-white font-family-karla`}>
 				<div className='w-full flex flex-wrap flex-row-reverse'>
 					<div className='w-full md:w-1/2 flex flex-col border-l-2 border-l-gray-500'>
 						<div className='flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32'>

@@ -1,11 +1,47 @@
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { useState } from "react";
+import { useContext } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { GoThreeBars } from "react-icons/go";
+import { IoMdNotificationsOutline } from "react-icons/io";
+import { MdLightMode, MdNightsStay, MdOutlineClose, MdOutlineDarkMode } from "react-icons/md";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { DarkModeContext } from "../../App";
+import { signOut } from 'firebase/auth'
 import logo from "../../Assest/images/image-1.png";
-import logo_v3 from "../../Assest/images/logov4.png";
+import logo_v3 from "../../Assest/images/shaheda.png";
+import auth from "../../firebase.init";
+import useRole from "../../hooks/useRole";
+import Loading from "../../Shared/Loading/Loading";
 import "./Header.css";
+import NotificationModal from "./NotificationModal";
 
 const Header = () => {
+  const [colorChange, setColorchange] = useState(false)
+	let [toggle, setToggle] = useState(false)
+	let [notificationModal, setNotificationModal] = useState(false)
+	const [user, loading] = useAuthState(auth)
+	// let navigate = useNavigate();
+	let location = useLocation().pathname
+	const [darkMode, setDarkMode] = useContext(DarkModeContext)
+    let [role, roleLoading] = useRole(user)
+
+
+	if (loading || roleLoading) {
+		return <Loading />
+	}
+	const navBtnHndle = () => {
+		setToggle(!toggle)
+	}
+	const changeNavbarColor = () => {
+		if (window.scrollY >= 80) {
+			setColorchange(true)
+		} else {
+			setColorchange(false)
+		}
+	}
   return (
     <div>
       <div className="w-full bg-[#f7f7f7]">
@@ -41,7 +77,7 @@ const Header = () => {
               <svg
                 stroke="currentColor"
                 fill="#2e6abf"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 16 16"
                 height="0.8em"
                 width="0.8em"
@@ -59,59 +95,267 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1140px] m-auto pb-1 px-3 flex justify-between">
+      <div className="lg:max-w-[1140px] m-auto pb-1 px-3 hidden lg:block lg:flex justify-between">
         <div className="flex items-center">
-          <img src={logo_v3} alt="" />
+          <img className="w-24 h-24 p-2" src={logo_v3} alt="" />
         </div>
         <div className="text-[14px] flex gap-5">
           <div className="flex items-center">
            <FontAwesomeIcon className="text-blue-500 text-xl p-2 border-2 rounded-full border-blue-100 m-4" icon={faPhone}></FontAwesomeIcon>
             <div>
-              <p className="font-semibold">Toll Free: 08000016609</p>
-              <p className="font-extrabold">Hot Line:16609</p>
+              <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`}>Toll Free: 08000016609</p>
+              <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`} text-gray-400>Hot Line:16609</p>
             </div>
           </div>
           <div className="flex items-center">
           <FontAwesomeIcon className="text-blue-500 text-xl p-2 border-2 rounded-full border-blue-100 m-4" icon={faEnvelope}></FontAwesomeIcon>
             <div>
-              <p className="font-semibold">Email us</p>
-              <p className="font-extrabold">info@najmat.net</p>
+              <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`}>Email us</p>
+              <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`}>info@shahedagroup.net</p>
             </div>
           </div>
           <div className="flex items-center">
             <div className="relative p-2 ml-2">
-              <h1 className="text-[14px] font-extrabold ml-3 quality-first">
+              <h1 className={`${darkMode ? ` text-gray-400` : `text-black`} text-[14px] font-extrabold ml-3 quality-first`}>
                 " Quality First "
               </h1>
-              <p className="ml-[-0.5rem] mr-2 text-[12px] sk-akij-uddin">
-                - NAJMAT-AL-YAHAR
+              <p className={`${darkMode ? ` text-gray-400` : `text-black`} ml-[-0.5rem] mr-2 text-[12px] sk-akij-uddin`}>
+                - SHAHEDA-GROUP
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-[#1662dc] w-full navbar sticky top-0">
-        <nav className="bg-[#1662dc] max-w-[1140px] m-auto">
-          <a className="text-white px-3 py-0 inline-block" href="/">
-            Home
-          </a>
-          <a className="text-white px-3 py-0 inline-block" href="#about">
-            About
-          </a>
-          <a className="text-white px-3 py-0 inline-block" href="#companies">
-            Our Companies
-          </a>
-          <a className="text-white px-3 py-0 inline-block" href="#services">
-            Services
-          </a>
-          <a className="text-white px-3 py-0 inline-block" href="#projects">
-            Media
-          </a>
-          <a className="text-white px-3 py-0 inline-block" href="#contactUs">
-            Contact Us
-          </a>
-        </nav>
-      </div>
+      <div className='flex bg-[#1662dc] flex-wrap items-center justify-between lg:justify-center py-6 sm:px-2 px-5'>
+					
+
+					<span
+						onClick={navBtnHndle}
+						className='md:hidden text-white text-left text-2xl cursor-pointer'
+					>
+						{toggle ? (
+							<MdOutlineClose></MdOutlineClose>
+						) : (
+							<GoThreeBars></GoThreeBars>
+						)}
+					</span>
+          <p className="text-yellow-400 font-bold lg:hidden">SHAHEDA GROUP</p>
+
+					<ul
+						onClick={navBtnHndle}
+						className={`mobile-manu flex md:hidden flex-col text-center z-10   left-0 w-full bg-white  absolute  py-4 duration-500 ${
+							toggle ? ' opacity-100  top-[105px]' : ' top-[-350px] opacity-0'
+						}`}
+					>
+						<NavLink
+							className={({ isActive }) =>
+								isActive ? 'activeLink' : 'navLink'
+							}
+							to={'/'}
+						>
+							Home
+						</NavLink>
+						<NavLink
+							className={({ isActive }) =>
+								isActive ? 'activeLink' : 'navLink'
+							}
+							to={'/properties'}
+						>
+							About
+						</NavLink>
+						<NavLink
+							className={({ isActive }) =>
+								isActive ? 'activeLink' : 'navLink'
+							}
+							to={'/resumeBuilder'}
+						>
+							Our Companies
+						</NavLink>
+						<NavLink
+							className={({ isActive }) =>
+								isActive ? 'activeLink' : 'navLink'
+							}
+							to={'/dashboard'}
+						>
+							Services
+						</NavLink>
+
+						{darkMode ? (
+							<li className='md:ml-2.5'>
+								<button
+									onClick={() => setDarkMode(false)}
+									className='py-2 mx-auto md:text-white md:px-2  flex items-center'
+									href='#'
+								>
+									Light{' '}
+									<MdLightMode className='ml-1 text-2xl font-semibold'></MdLightMode>
+								</button>
+							</li>
+						) : (
+							<li className='md:ml-2.5'>
+								<button
+									onClick={() => setDarkMode(true)}
+									className='py-2 mx-auto  md:text-white md:px-2 flex items-center '
+									href='#'
+								>
+									Dark{' '}
+									<MdNightsStay className='ml-1 text-2xl font-semibold'></MdNightsStay>
+								</button>
+							</li>
+						)}
+						<div className='avatar mx-auto my-2'>
+							<div className='w-9 rounded-full ring ring-warning ring-offset-base-100 ring-offset-2'>
+								<img
+									src='https://placeimg.com/192/192/people'
+									alt='Profile'
+								/>
+							</div>
+						</div>
+						<Link
+							className='inline-block w-44 mx-auto font-semibold px-4 py-2 hover:bg-white hover:text-black  bg-warning text-black  hover:border-warning rounded'
+							to={'/'}
+						>
+							Buy Apartment
+						</Link>
+					</ul>
+
+					{/* desktop navbar  */}
+					<div className='hidden md:block w-full md:w-auto' id='menu'>
+						<nav className='w-full bg-white text-black  md:bg-transparent rounded shadow-lg px-6 py-10 mt-4 text-center md:p-0 md:mt-0 md:shadow-none'>
+							<ul className='md:flex items-center'>
+								<li>
+									<Link
+										to={'/'}
+										className={`py-2 inline-block ${colorChange ? 'text-black' :''} md:text-white md:hidden lg:block font-semibold`}
+										href='#'
+									>
+										Home
+									</Link>
+								</li>
+								<li className='md:ml-2.5'>
+									<Link
+										to={'/about'}
+										className='py-2 inline-block md:text-white md:px-2 font-semibold'
+										href='#'
+									>
+										About
+									</Link>
+								</li>
+								<li className='md:ml-2.5'>
+									<Link
+										to={'/companies'}
+										className='py-2 inline-block md:text-white md:px-2 font-semibold'
+									>
+										Our Companies
+									</Link>
+								</li>
+								<li className='md:ml-2.5 md:hidden lg:block'>
+									<Link
+										to={'/services'}
+										className='py-2 inline-block md:text-white md:px-2 font-semibold'
+										href='#'
+									>
+										Services
+									</Link>
+								</li>
+								<li className='md:ml-2.5 md:hidden lg:block'>
+									<Link
+										to={'/contact-us'}
+										className='py-2 inline-block md:text-white md:px-2 font-semibold'
+										href='#'
+									>
+										Contact Us									</Link>
+								</li>
+
+								<li className='md:ml-2.5'>
+									<Link
+										to={'/media'}
+										className='py-2 inline-block md:text-white md:px-2 font-semibold'
+										href='#'
+									>
+										Media
+									</Link>
+								</li>
+
+								{darkMode ? (
+									<li className='md:ml-2.5'>
+										<button
+											onClick={() => setDarkMode(false)}
+											className='py-2 inline-block md:text-white md:px-2 font-semibold'
+											href='#'
+										>
+											<MdLightMode className='text-2xl'></MdLightMode>
+										</button>
+									</li>
+								) : (
+									<li className='md:ml-2.5'>
+										<button
+											onClick={() => setDarkMode(true)}
+											className='py-2 inline-block md:text-white md:px-2 font-semibold'
+											href='#'
+										>
+											<MdOutlineDarkMode className='text-2xl'></MdOutlineDarkMode>
+										</button>
+									</li>
+								)}
+
+								<li className='md:ml-2.5 md:mr-2.5 flex items-center relative'>
+									<label
+										onClick={() => setNotificationModal(true)}
+										htmlFor='notificattonModal'
+										className='inline-block md:text-white md:px-2 font-semibold cursor-pointer'
+									>
+										<IoMdNotificationsOutline className='text-2xl'></IoMdNotificationsOutline>
+										
+									</label>
+
+									<div className='absolute top-3'>
+										{notificationModal && (
+											<NotificationModal/>
+										)}
+									</div>
+								</li>
+
+								<Link to={'/profile'} className='avatar mx-2'>
+									<div className='w-9 rounded-full ring ring-error ring-offset-base-100 ring-offset-2'>
+										<img
+											src='https://placeimg.com/192/192/people'
+											alt='Profile'
+										/>
+									</div>
+								</Link>
+
+								{user ? (
+									<li className='md:ml-6 mt-3 md:mt-0'>
+										<a href='/'
+											onClick={() => signOut(auth)}
+											className={`inline-block font-semibold px-4 py-2 ${
+												colorChange
+													? 'bg-red-500 hover:text-black text-black  hover:bg-warning'
+													: 'hover:bg-white hover:text-teal-900 text-black bg-warning'
+											}   border-white rounded cursor-pointer`}
+										>
+											Sign Out
+										</a>
+									</li>
+								) : (
+									<li className='md:ml-6 mt-3 md:mt-0'>
+										<Link
+											className={`inline-block font-semibold px-4 py-2 ${
+												colorChange
+													? 'bg-red-500 hover:text-black text-black  hover:bg-warning'
+													: 'hover:bg-white hover:text-teal-900 text-black bg-warning'
+											}    border-white rounded`}
+											to='/login'
+										>
+											Login
+										</Link>
+									</li>
+								)}
+							</ul>
+						</nav>
+					</div>
+				</div>
     </div>
   );
 };

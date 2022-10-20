@@ -12,7 +12,7 @@ const Projects = () => {
                 <h2 style={{ fontFamily: "'Rajdhani', sans-serif" }}
 				className={`${
 					darkMode && 'text-white'
-				} uppercase  font-bold text-4xl py-3 text-center`}>our LATEST <span className="text-[#f61a1a]">Us</span></h2>
+				} uppercase  font-bold text-4xl py-3 text-center`}>our LATEST <span className="text-[#f61a1a]">Projects</span></h2>
                 <div className='flex justify-center mb-16'>
 				<div className=' rounded-md w-32 h-1 bg-[#f61a1a]'></div>
 				<div className=' rounded-md w-4 h-1 mx-2 bg-[#ffd103]'></div>

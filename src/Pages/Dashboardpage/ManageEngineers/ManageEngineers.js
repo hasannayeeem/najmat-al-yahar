@@ -122,7 +122,7 @@ const ManageEngineers = () => {
                 <th className="text-center">
                   {/*------------- button to update the engineer ---------------*/}
                   <label
-                    for={_id}
+                    htmlFor={_id}
                     className=" btn modal-button btn-outline btn-xs btn-success h-5 sm:h-6  sm:px-3 uppercase  rounded-full text-white duration-1000 mx-1"
                   >
                     edit
@@ -133,7 +133,7 @@ const ManageEngineers = () => {
                   <div className="modal">
                     <div className="modal-box block mt-40 mb-10 h-[400px] border rounded-lg">
                       <label
-                        for={_id}
+                        htmlFor={_id}
                         className="btn btn-sm btn-circle absolute right-2 top-2"
                       >
                         ✕

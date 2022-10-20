@@ -92,25 +92,25 @@ const Constructors = () => {
 		<div className='sm:px-10 px-2 pb-5'>
 			{/* Add new button for adding constructor */}
 			<div className='text-end mb-2 w-full'>
-				{/* <button class='btn w-full md:btn-wide'>Add New</button> */}
+				{/* <button className='btn w-full md:btn-wide'>Add New</button> */}
 
 				{/* <!-- The button to open modal --> */}
-				<label for='my-modal-3' class='btn modal-button w-full md:btn-wide'>
+				<label htmlFor='my-modal-3' className='btn modal-button w-full md:btn-wide'>
 					Add New
 				</label>
 			</div>
 
 			{/* <!-- Put this part before </body> tag --> */}
-			<input type='checkbox' id='my-modal-3' class='modal-toggle' />
-			<div class='modal'>
-				<div class='modal-box block mt-40 mb-10 h-[400px] border rounded-lg'>
+			<input type='checkbox' id='my-modal-3' className='modal-toggle' />
+			<div className='modal'>
+				<div className='modal-box block mt-40 mb-10 h-[400px] border rounded-lg'>
 					<label
-						for='my-modal-3'
-						class='btn btn-sm btn-circle absolute right-2 top-2'
+						htmlFor='my-modal-3'
+						className='btn btn-sm btn-circle absolute right-2 top-2'
 					>
 						✕
 					</label>
-					<h3 class='text-lg font-bold'>
+					<h3 className='text-lg font-bold'>
 						Please provide the following information!
 					</h3>
 					{/* form */}
@@ -124,14 +124,14 @@ const Constructors = () => {
 				</div>
 			</div>
 
-			<div class='overflow-x-auto'>
+			<div className='overflow-x-auto'>
 				<table
-					class={`${
+					className={`${
 						darkMode ? 'text-gray-400' : 'text-gray-500 table table-zebra'
 					} w-full`}
 				>
 					<thead
-						class={`${
+						className={`${
 							darkMode
 								? 'bg-gray-700 text-gray-400'
 								: 'text-gray-700  bg-gray-50 '

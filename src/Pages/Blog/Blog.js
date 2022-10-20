@@ -5,7 +5,7 @@ const Blog = () => {
     return (
         <div className='bg-gray-200 '>
             {/* Fast Section start here */}
-            <section className="px-5 py-10 mt-32">
+            <section className="px-5 py-10">
                 <div className="container grid grid-cols-12 mx-auto gap-y-6 md:gap-10">
                     <div className="flex flex-col justify-between col-span-12 py-2 space-y-8 md:space-y-16 md:col-span-3">
                         <div className="flex flex-col space-y-8 md:space-y-12">

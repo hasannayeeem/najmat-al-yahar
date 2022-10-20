@@ -13,6 +13,7 @@ nav li a:hover{
     margin: 7px auto;
 }
 .mobile-manu a:hover{
-    color: rgb(255, 255, 255);
+    color: blue;
+    font-weight: 700;
 
 }

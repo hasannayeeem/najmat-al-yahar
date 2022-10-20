@@ -6,8 +6,8 @@ import { DarkModeContext } from "../../../App";
 import Company from "./Company";
 
 const Companies = () => {
-const [companies, setCompanies] = useState([]);
   const [darkMode] = useContext(DarkModeContext);
+const [companies, setCompanies] = useState([]);
 
   useEffect(() => {
     fetch("companies.json")

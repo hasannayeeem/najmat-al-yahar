@@ -12,7 +12,7 @@ const Statistics = () => {
       <div className="container px-5 pt-24 pb-4 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h1
-            class={`${
+            className={`${
               darkMode ? "text-white" : "text-gray-900"
             } sm:text-3xl text-2xl font-medium title-font mb-4 `}
           >

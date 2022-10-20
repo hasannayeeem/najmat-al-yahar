@@ -20,7 +20,6 @@ import useEngineers from "../../../hooks/useEngineers";
 const Engineer = () => {
   const [engineers] = useEngineers([]);
   const [darkMode] = useContext(DarkModeContext);
-  // console.log(engineers);
   return (
     <div className="p-6 md:px-16">
       <Swiper
@@ -53,7 +52,7 @@ const Engineer = () => {
           return (
             <SwiperSlide key={_id}>
               <div className="my-10">
-                <div class={`${darkMode && "text-white"} engCard shadow-xl`}>
+                <div className={`${darkMode && "text-white"} engCard shadow-xl`}>
                   <img src={picture} alt="Person" className="card__image" />
                   <p className="card__name">{name}</p>
                   <div className="">
@@ -86,16 +85,16 @@ const Engineer = () => {
                   </ul>
                   <div className="flex">
                     <button
-                      class={`${
-                        darkMode ? "bg-transparent" : "bg-white"
+                      className={`${
+                        darkMode ? "bg-transparent text-teal-600" : "bg-white"
                       } engBtn draw-border`}
                     >
                       Follow
                     </button>
                     <button
-                      class={`${
+                      className={`${
                         darkMode ? "bg-transparent" : "bg-white"
-                      } engBtn draw-border`}
+                      } engBtn draw-border text-teal-600`}
                     >
                       massage
                     </button>

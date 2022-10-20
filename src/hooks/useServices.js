@@ -7,7 +7,7 @@ const useServices = () =>{
         .then(res => res.json())
         .then(data => setServices(data));
         
-    },[services, setServices]);
+    },[services,  setServices]);
     return [services, setServices];
 }
 export default useServices;

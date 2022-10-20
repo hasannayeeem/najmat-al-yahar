@@ -17,19 +17,6 @@ const Reviews = () => {
   }, []);
   return (
     <div>
-      {/* <h2
-        style={{ fontFamily: "'Rajdhani', sans-serif" }}
-        className={`${
-          darkMode && "text-white"
-        } uppercase text-3xl font-bold text-center py-3`}
-      >
-        Review
-      </h2>
-      <div className="flex justify-center">
-      <div className=' rounded-md w-32 h-1 bg-[#f61a1a]'></div>
-				<div className=' rounded-md w-4 h-1 mx-2 bg-[#ffd103]'></div>
-				<div className=' rounded-md w-2 h-1 bg-[#030303]'></div>
-      </div> */}
       <div className="p-6 -mt-24 md:px-16">
         <Swiper
           slidesPerView={1}
@@ -56,7 +43,7 @@ const Reviews = () => {
           modules={[Autoplay, FreeMode, Pagination]}
           className="mySwiper "
         >
-          {reviews.map((review) => {
+          {reviews.slice(0, 7).map((review) => {
             const { picture, name, date, stars, reviewTxt, _id } = review;
             return (
               <SwiperSlide className="sm:m-10" key={_id}>

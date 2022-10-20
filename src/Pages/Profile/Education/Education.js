@@ -15,19 +15,19 @@ const Education = () => {
                             <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-2 p-4'>
                                 <div>
                                     <label className='font-medium'>Edit Education Level</label>
-                                    <input type="text" placeholder="MSC" class="input input-bordered w-full max-w-xs" />
+                                    <input type="text" placeholder="MSC" className="input input-bordered w-full max-w-xs" />
                                 </div>
                                 <div>
                                     <label className='font-medium'>Degree</label><br />
-                                    <input type="text" placeholder="PHD" class="input input-bordered w-full max-w-xs" />
+                                    <input type="text" placeholder="PHD" className="input input-bordered w-full max-w-xs" />
                                 </div>
                                 <div>
                                     <label className='font-medium'>Edit Institution Name</label>
-                                    <input type="text" placeholder="Dhaka College" class="input input-bordered w-full max-w-xs" />
+                                    <input type="text" placeholder="Dhaka College" className="input input-bordered w-full max-w-xs" />
                                 </div>
                                 <div>
                                     <label className='font-medium'>Passing Year</label>
-                                    <input type="text" placeholder="XXXX" class="input input-bordered w-full max-w-xs" />
+                                    <input type="text" placeholder="XXXX" className="input input-bordered w-full max-w-xs" />
                                 </div>
                             </div>
                             <div className=' ml-4 mb-1'>
