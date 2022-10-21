@@ -1,20 +1,20 @@
 [
     {
         "image": "https://akij.net/img/Nasir-Sir.png",
-        "name": "Sadikur",
+        "name": "Mohammed",
         "role": "Chairman",
-        "company": "Mohasana Group"
+        "company": "Saheda Group"
     },
     {
         "image": "https://akij.net/img/Bashir-sir.png",
         "name": "Hasaim",
         "role": "Managing Director",
-        "company": "Mohasana Group"
+        "company": "Saheda Group"
     },
     {
         "image": "https://akij.net/img/jamil-sir.png",
-        "name": "Parbez",
-        "role": "Corporate Director",
-        "company": "Mohasana Group"
+        "name": "Sadikur",
+        "role": "Founder",
+        "company": "Sadikur Consultant & Human resources R.S.L"
     }
 ]

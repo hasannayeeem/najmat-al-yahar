@@ -10,7 +10,7 @@ import { MdLightMode, MdNightsStay, MdOutlineClose, MdOutlineDarkMode } from "re
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { DarkModeContext } from "../../App";
 import { signOut } from 'firebase/auth'
-import logo from "../../Assest/images/image-1.png";
+import { FaLocationArrow } from "react-icons/fa";
 import logo_v3 from "../../Assest/images/shaheda.png";
 import auth from "../../firebase.init";
 import useRole from "../../hooks/useRole";
@@ -88,10 +88,14 @@ const Header = () => {
             </div>
           </div>
           <div className="flex items-center justify-end mr-4">
-            <span className="text-[#2e6abf] mr-2">
+            {/* <span className="text-[#2e6abf] mr-2">
               <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
             </span>
-            <small>Web Mail</small>
+            <small>Web Mail</small> */}
+            <span className="text-[#2e6abf] mr-2">
+              <FaLocationArrow />
+            </span>
+            <small>1502 Mai Tower, 15 floor, Al Nahda 1, Dubai, United Arab Emirates</small>
           </div>
         </div>
       </div>
@@ -103,15 +107,15 @@ const Header = () => {
           <div className="flex items-center">
            <FontAwesomeIcon className="text-blue-500 text-xl p-2 border-2 rounded-full border-blue-100 m-4" icon={faPhone}></FontAwesomeIcon>
             <div>
-              <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`}>Toll Free: 08000016609</p>
-              <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`} text-gray-400>Hot Line:16609</p>
+              <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`}>Telephone: +97143485089</p>
+              <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`} text-gray-400>Hot Line: 043455560</p>
             </div>
           </div>
           <div className="flex items-center">
           <FontAwesomeIcon className="text-blue-500 text-xl p-2 border-2 rounded-full border-blue-100 m-4" icon={faEnvelope}></FontAwesomeIcon>
             <div>
               <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`}>Email us</p>
-              <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`}>info@shahedagroup.net</p>
+              <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`}>info@sahedagroup.net</p>
             </div>
           </div>
           <div className="flex items-center">
@@ -120,7 +124,7 @@ const Header = () => {
                 " Quality First "
               </h1>
               <p className={`${darkMode ? ` text-gray-400` : `text-black`} ml-[-0.5rem] mr-2 text-[12px] sk-akij-uddin`}>
-                - SHAHEDA-GROUP
+                - SAHEDA-GROUP
               </p>
             </div>
           </div>

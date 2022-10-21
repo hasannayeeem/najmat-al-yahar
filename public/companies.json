@@ -11,7 +11,7 @@
       "sadikurs": [
         {
           "_id": "623853b2614a311d5abafdd1",
-          "index": 0,
+          "name": "something",
           "title": "Mega Mall Construction",
           "type": "New Trending",
           "picture": "https://nepirockcastle.com/wp-content/uploads/2019/03/nepi-MEGA-MALL-ROMANIA-1.jpg",
@@ -244,7 +244,7 @@
       "title": "Najmat-Al-Yahar",
       "name": "najmat",
       "type": "New Trending",
-      "img": "https://i.ibb.co/RT4m3WN/najmatfour.png",
+      "img": "https://i.ibb.co/xJh9vr8/Untitled-2.png",
       "duration": "90 days",
       "assignment": "9 Assignment",
       "pervezs": [

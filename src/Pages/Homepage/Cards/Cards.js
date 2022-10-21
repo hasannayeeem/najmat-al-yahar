@@ -5,7 +5,8 @@ import { DarkModeContext } from '../../../App'
 import { BsJournalBookmarkFill } from 'react-icons/bs'
 
 const Cards = () => {
-	const [services] = useServices([])
+	const [services] = useServices([]);
+	console.log(services);
 	const categories= [];
 	let isExist = false;
 	for(let i=0; i<=services?.length; i++){

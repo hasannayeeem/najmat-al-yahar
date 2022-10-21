@@ -27,14 +27,14 @@ import Address from "./Pages/Profile/Address/Address";
 import Education from "./Pages/Profile/Education/Education";
 import logov1 from './Assest/images/sahedaFooter.png'
 import RequireAuth from './Auth/RequireAuth'
-import RequireAdmin from './Auth/RequireAdmin'
-import Searches from "./Pages/SearchRoute/Searches";
+import RequireAdmin from './Auth/RequireAdmin';
 import Blog from "./Pages/Blog/Blog";
 import Header from "./components/Navbar/Header";
 import CompanyDetails from "./Pages/Homepage/Companies/CompanyDetails";
 import Contact from "./Pages/Homepage/Contact/Contact";
 import AboutUs from "./Pages/Homepage/AboutUs/AboutUs";
 import Projects from "./Pages/Homepage/projects/Projects";
+import Cards from "./Pages/Homepage/Cards/Cards";
 
 export const DarkModeContext = createContext("");
 const queryClient = new QueryClient();
@@ -47,7 +47,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, [3000]);
+    }, [2000]);
   }, []);
 
   return (
@@ -60,7 +60,7 @@ function App() {
             color={"yellow"}
             loading={loading}
             size={450}
-            width={130}
+            width={160}
             speedMultiplier={0.6}
             height={4}
           />
@@ -78,6 +78,7 @@ function App() {
                 <Route path="/companies" element={<CompanyDetails />} />
                 <Route path="/companies/:id" element={<CompanyDetails />} />
                 <Route path="/blogs" element={<Blog />} />
+                <Route path="/services" element={<Cards />} />
                 <Route path="/media" element={<Projects />} />
                 <Route path="/contact-us" element={<Contact/>} />
                 <Route path="/dashboard" element={<Dashboard />}>
@@ -111,7 +112,6 @@ function App() {
                 <Route path="/user_data" element={<UserData />} />
                 <Route path="/addReview" element={<AddReview />} />
                 <Route path="/bookDetail/:_id" element={<BookReview />} />
-                <Route path="search" element={<Searches />} />
                 {/* Profile Routes */}
                 <Route path="/profile" element={<RequireAuth><Profile /></RequireAuth>}>
                   <Route index element={<MyProfile />}></Route>
