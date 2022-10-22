@@ -163,7 +163,7 @@ const Header = () => {
 							className={({ isActive }) =>
 								isActive ? 'activeLink' : 'navLink'
 							}
-							to={'/properties'}
+							to={'/about'}
 						>
 							About
 						</NavLink>
@@ -171,7 +171,7 @@ const Header = () => {
 							className={({ isActive }) =>
 								isActive ? 'activeLink' : 'navLink'
 							}
-							to={'/resumeBuilder'}
+							to={'/companies'}
 						>
 							Our Companies
 						</NavLink>
@@ -179,7 +179,7 @@ const Header = () => {
 							className={({ isActive }) =>
 								isActive ? 'activeLink' : 'navLink'
 							}
-							to={'/dashboard'}
+							to={'/services'}
 						>
 							Services
 						</NavLink>
@@ -198,7 +198,7 @@ const Header = () => {
 						) : (
 							<li className='md:ml-2.5'>
 								<button
-									onClick={() => setDarkMode(true)}
+									onClick={() => setDarkMode(false)}
 									className='py-2 mx-auto  md:text-white md:px-2 flex items-center '
 									href='#'
 								>
@@ -294,7 +294,7 @@ const Header = () => {
 								) : (
 									<li className='md:ml-2.5'>
 										<button
-											onClick={() => setDarkMode(true)}
+											onClick={() => setDarkMode(false)}
 											className='py-2 inline-block md:text-white md:px-2 font-semibold'
 											href='#'
 										>

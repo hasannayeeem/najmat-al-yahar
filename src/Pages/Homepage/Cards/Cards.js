@@ -6,7 +6,6 @@ import { BsJournalBookmarkFill } from 'react-icons/bs'
 
 const Cards = () => {
 	const [services] = useServices([]);
-	console.log(services);
 	const categories= [];
 	let isExist = false;
 	for(let i=0; i<=services?.length; i++){

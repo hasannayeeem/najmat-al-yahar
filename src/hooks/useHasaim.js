@@ -1,14 +1,15 @@
-// import { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
+import { useLocation } from "react-router-dom";
 
-// const useHasaim = () =>{
-//     const [hasaim, setHasaim] = useState([]);
-//     useEffect( () =>{
-//         fetch('hasaim.json')
-//         .then(res => res.json())
-//         .then(data => setHasaim(data));
+const useHasaim = () => {
+    const lc = useLocation();
+    const [hasaim, setHasaim] = useState([]);
+    useEffect( () =>{
+        fetch('hasaim.json')
+        .then(res => res.json())
+        .then(data => setHasaim(data));
         
-//     },[hasaim,  setHasaim]);
-//     console.log(hasaim);
-//     return [hasaim, setHasaim];
-// }
-// export default useHasaim;
+    },[hasaim,  setHasaim])
+    return [hasaim, setHasaim, lc?.pathname];
+}
+export default useHasaim;
