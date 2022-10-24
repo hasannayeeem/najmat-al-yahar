@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
 import logo_v2 from "../../Assest/images/sahedaFooter.png";
 const Footer = () => {
   const date = new Date().getFullYear();
@@ -125,7 +126,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link rel="" to="/company/623853b2d2ee71fb149b76c7">
-                  M P Information Technology
+                  <span className="block">Mohammed Parvez</span> Information Technology
                   </Link>
                 </li>
                 <li>
@@ -135,33 +136,24 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link rel="noopener noreferrer" to="/company/623853b2614a311d5abafdd1">
-                  Sadikur R.S.L
+                  <span className="block">Sadikur Consultant &</span> Human resources R.S.L
                   </Link>
                 </li>
               </ul>
             </div>
             <div className="space-y-3 ">
-              <h3 className="uppercase dark:text-gray-50">Directors</h3>
+              <h3 className="uppercase dark:text-gray-50">Founder</h3>
               <ul className="space-y-1">
                 <li>
                   <Link rel="noopener noreferrer" to="/">
-                    Sadikur
+                    Sadikur Rahman
                   </Link>
                 </li>
-                <li>
-                  <Link rel="noopener noreferrer" to="/">
-                    Hasaim
-                  </Link>
-                </li>
-                <li>
-                  <Link rel="noopener noreferrer" to="/">
-                    Parvez
-                  </Link>
-                </li>
-                <li>
-                  <Link rel="noopener noreferrer" to="/">
-                    Najmat
-                  </Link>
+                <li className="flex mt-2">
+                <FaFacebookF></FaFacebookF>
+                    <FaLinkedinIn className=" mx-4"></FaLinkedinIn>
+                    <FaTwitter></FaTwitter>
+                    <FaYoutube className="ml-4"></FaYoutube>
                 </li>
               </ul>
             </div>
@@ -169,11 +161,11 @@ const Footer = () => {
         </div>
         <div className="py-6 text-sm text-center dark:text-gray-400">
           © {date}{" "}
-          <Link className="" to="/">
-            {" "}
-            Neighbour Home
+          <Link className="text-yellow-500 mr-1" to="https://sahedagroup.net/" >
+            SahedaGroup  
           </Link>
-          . All rights reserved.
+            All rights reserved.
+             {/* <span className="text-xs">Developed By <a href="https://nayeemhasan.web.app" target={`_blank`} className="text-xs text-yellow-500">Nayeem Hasan</a></span> */}
         </div>
       </div>
     </footer>

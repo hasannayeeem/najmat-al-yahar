@@ -37,7 +37,7 @@ console.log(lc?.pathname);
     return (
         <div className='mx-auto'>
             {/* <h1 className="text-5xl border h-48 text-center">company Image or Logo{companies?.length}</h1> */}
-            <img className='cover w-screen opacity-50 h-[420px]' src="https://scontent.fdac34-1.fna.fbcdn.net/v/t39.30808-6/299165621_1355231408336068_1707150811493179633_n.jpg?stp=c0.83.526.275a_dst-jpg_p526x296&_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGkSl2YG5_JLY6oAPZa7uThpMdA1zhdFFWkx0DXOF0UVSQHqcBceF7jQJxUYN7UieO6EAZu2sK8-dY-xJBxHwv8&_nc_ohc=dBl2LV5G5GUAX9TsSD_&_nc_zt=23&_nc_ht=scontent.fdac34-1.fna&oh=00_AT_DRFHidkjPR63RfHc82jKAcAIWfWydHKuWdzNlcnFjcQ&oe=6355A8C1" alt="" />
+            <img className='cover w-screen opacity-50 h-[420px]' src="https://i.ibb.co/qB3dbCS/299165621-1355231408336068-1707150811493179633-n.jpg" alt="" />
             <div>
             <ul className="lg:text-2xl bg-yellow-400 border flex justify-around text-center">
                 <li><Link to={`/companies/sadikur`} className={`font-semibold hover:text-white hover:bg-error inline-block lg:px-28`}>Sadikur's</Link></li>

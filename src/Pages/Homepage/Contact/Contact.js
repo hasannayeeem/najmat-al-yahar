@@ -189,7 +189,7 @@ const Contact = () => {
                 <div className="p-2 w-full">
                   <button
                     type="submit"
-                    className="flex mx-auto   hover:selection:border-0 py-2 px-8 focus:outline-none  rounded text-lg  border-2 border-red-600 bg-warning hover:bg-white hover:text-teal-900  duration-200 text-black   mt-4 sm:mt-8 font-semibold"
+                    className="flex mx-auto   hover:selection:border-0 py-2 px-8 focus:outline-none  rounded text-lg  border-2 border-red-600 hover:bg-warning bg-white hover:text-teal-900  duration-200 text-black   mt-4 sm:mt-8 font-semibold"
                   >
                     Send
                   </button>

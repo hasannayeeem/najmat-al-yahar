@@ -108,7 +108,7 @@ const Header = () => {
            <FontAwesomeIcon className="text-blue-500 text-xl p-2 border-2 rounded-full border-blue-100 m-4" icon={faPhone}></FontAwesomeIcon>
             <div>
               <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`}>Telephone: +97143485089</p>
-              <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`} text-gray-400>Hot Line: 043455560</p>
+              <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`} text-gray-400>Hot Line:</p>
             </div>
           </div>
           <div className="flex items-center">
@@ -143,12 +143,12 @@ const Header = () => {
 							<GoThreeBars></GoThreeBars>
 						)}
 					</span>
-          <p className="text-yellow-400 font-bold lg:hidden">SHAHEDA GROUP</p>
+          <p className="text-yellow-400 font-bold lg:hidden"><Link to={`/`}>SHAHEDA GROUP</Link></p>
 
 					<ul
 						onClick={navBtnHndle}
 						className={`mobile-manu flex md:hidden flex-col text-center z-10   left-0 w-full bg-white  absolute  py-4 duration-500 ${
-							toggle ? ' opacity-100  top-[105px]' : ' top-[-350px] opacity-0'
+							toggle ? ' opacity-100  top-[120px]' : ' top-[-350px] opacity-0'
 						}`}
 					>
 						<NavLink
@@ -173,7 +173,7 @@ const Header = () => {
 							}
 							to={'/companies'}
 						>
-							Our Companies
+							Our Sister Concerns
 						</NavLink>
 						<NavLink
 							className={({ isActive }) =>
@@ -250,7 +250,7 @@ const Header = () => {
 										to={'/companies'}
 										className='py-2 inline-block md:text-white md:px-2 font-semibold'
 									>
-										Our Companies
+										Our Sister Concerns
 									</Link>
 								</li>
 								<li className='md:ml-2.5 md:hidden lg:block'>
