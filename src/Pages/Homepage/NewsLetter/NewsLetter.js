@@ -20,16 +20,10 @@ const NewsLetter = () => {
       >
         <div>
           <Fade top duration="2000">
-            <h3 className="text-xl sm:text-2xl uppercase text-white tracking-wider">
-              SPECIAL <span className="text-[#f61a1a]">OFFER</span> FOR
-              <span className="text-warning">SUBSCRIPTION</span>
+            <h3 className="text-xl sm:text-4xl uppercase text-white tracking-wider">
+              SPECIAL <span className="text-[#f61a1a]">OFFER</span> FOR 
+              <span className="text-warning"> SUBSCRIPTION</span>
             </h3>
-            <h2
-              style={{ fontFamily: "" }}
-              className="mt-2 text-2xl sm:text-3xl font-semibold  sm:font-bold"
-            >
-              <span className="text-[#f61a1a]">GET</span> INSTANT <span className="text-warning">DISCOUNT</span> FOR <span className="text-[#f61a1a]">MEMBERSHIP</span>
-            </h2>
             <p
               style={{ fontFamily: "Open Sans,sans-serif" }}
               className="italic text-white sm:text-base text-sm py-2"

@@ -32,12 +32,6 @@ const Banner = () => {
                 involved in the erection of a structure, cladding, external
                 finish, formwork, fixture, fitting of service installation
               </p>
-              <a
-                href="#"
-                className="px-8 py-3 bg-warning hover:bg-white hover:text-teal-900  transition text-black rounded inline-block mt-4 sm:mt-8 font-semibold"
-              >
-                Buy Apartment
-              </a>
             </div>
           </div>
         </section>
@@ -75,12 +69,7 @@ const Banner = () => {
                 involved in the erection of a structure, cladding, external
                 finish, formwork, fixture, fitting of service installation
               </p>
-              <a
-                href="#"
-                className="px-8 py-3 bg-warning hover:bg-white hover:text-teal-900  transition text-black rounded inline-block mt-4 sm:mt-8 font-semibold"
-              >
-                Buy Apartment
-              </a>
+              
             </div>
           </div>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -126,12 +115,7 @@ const Banner = () => {
                 involved in the erection of a structure, cladding, external
                 finish, formwork, fixture, fitting of service installation
               </p>
-              <a
-                href="#"
-                className="px-8 py-3 bg-warning hover:bg-white hover:text-teal-900  transition text-black rounded inline-block mt-4 sm:mt-8 font-semibold"
-              >
-                Buy Apartment
-              </a>
+              
             </div>
           </div>
         </section>
@@ -169,12 +153,7 @@ const Banner = () => {
                 involved in the erection of a structure, cladding, external
                 finish, formwork, fixture, fitting of service installation
               </p>
-              <a
-                href="#"
-                className="px-8 py-3 bg-warning hover:bg-white hover:text-teal-900  transition text-black rounded inline-block mt-4 sm:mt-8 font-semibold"
-              >
-                Buy Apartment
-              </a>
+              
             </div>
           </div>
         </section>

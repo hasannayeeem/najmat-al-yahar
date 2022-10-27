@@ -22,7 +22,7 @@ import EngineersTable from "./Pages/ServiceDetails/EngineersTable";
 import { BarLoader } from "react-spinners";
 import Dashboard1 from "./Pages/Dashboardpage/Dashboard1/Dashboard1";
 import Profile from "./Pages/Profile/Profile";
-import MyProfile from "./Pages/Profile/MyProfile/MyProfile";
+import MyProfile from "./Pages/Profile/MyProfile/CompanyProfile";
 import Address from "./Pages/Profile/Address/Address";
 import Education from "./Pages/Profile/Education/Education";
 import logov1 from './Assest/images/sahedaFooter.png'
@@ -35,6 +35,8 @@ import Contact from "./Pages/Homepage/Contact/Contact";
 import AboutUs from "./Pages/Homepage/AboutUs/AboutUs";
 import Projects from "./Pages/Homepage/projects/Projects";
 import Cards from "./Pages/Homepage/Cards/Cards";
+import Companies from "./Pages/Homepage/Companies/Companies";
+import CompanyProfile from "./Pages/Profile/MyProfile/CompanyProfile";
 
 export const DarkModeContext = createContext("");
 const queryClient = new QueryClient();
@@ -75,8 +77,8 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<AboutUs />} />
-                <Route path="/companies" element={<CompanyDetails />} />
-                <Route path="/companies/:id" element={<CompanyDetails />} />
+                {/* <Route path="/companies" element={<CompanyDetails />} /> */}
+                {/* <Route path="/companies/:id" element={<CompanyDetails />} /> */}
                 <Route path="/blogs" element={<Blog />} />
                 <Route path="/services" element={<Cards />} />
                 <Route path="/media" element={<Projects />} />
@@ -113,10 +115,13 @@ function App() {
                 <Route path="/addReview" element={<AddReview />} />
                 <Route path="/bookDetail/:_id" element={<BookReview />} />
                 {/* Profile Routes */}
-                <Route path="/profile" element={<RequireAuth><Profile /></RequireAuth>}>
-                  <Route index element={<MyProfile />}></Route>
-                  <Route path="address" element={<Address />}></Route>
-                  <Route path="education" element={<Education />}></Route>
+                <Route path="/companies" element={<Profile />}>
+                  <Route index element={<CompanyProfile />}></Route>
+                  <Route path="najmat" element={<Address />}></Route>
+                  <Route path="sadikur" element={<Address />}></Route>
+                  <Route path="hasaim" element={<Address />}></Route>
+                  <Route path="parvez" element={<Address />}></Route>
+                  <Route path="upcoming..." element={<Address />}></Route>
                 </Route>
                 <Route path="*" element={<NotFound />} />
               </Routes>

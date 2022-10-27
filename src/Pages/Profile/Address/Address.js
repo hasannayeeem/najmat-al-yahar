@@ -1,97 +1,43 @@
-import React from 'react';
+import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
+import useServices from "../../../hooks/useServices";
+import Card from "../../Homepage/Card/Card";
 
 const Address = () => {
+  const [najmat, setNajmat] = useState([]);
+  const [darkMode, setDarkMode] = useState(false);
+  useEffect(() => {
+    fetch("https://neighbour-home--server.herokuapp.com/constructor")
+      .then((res) => res.json())
+      .then((data) => setNajmat(data));
+  }, [najmat, setNajmat]);
+  const [services] = useServices();
 
-    const [toogleAddressEdit, setToogleAddressEdit] = React.useState(false);
+  return (
+    <section>
+      <h1 className="text-center text-3xl py-3 font-bold border-b-2 border-b-gray-300">
+        Welcome To Najmat Al Yahar </h1>
+      <h2
+        style={{ fontFamily: "'Rajdhani', sans-serif" }}
+        className={`${
+          darkMode && "text-white"
+        } uppercase  font-bold text-3xl pb-3 pt-12 text-center`}
+      >Our <span className="text-[#f61a1a]">Services</span>
+      </h2>
+      <div className="flex justify-center">
+        <div className=" rounded-md w-32 h-1 bg-[#f61a1a]"></div>
+        <div className=" rounded-md w-4 h-1 mx-2 bg-[#ffd103]"></div>
+        <div className=" rounded-md w-2 h-1 bg-[#030303]"></div>
+      </div>
 
-    return (
-        <section>
-            <h1 className='text-center text-3xl py-3 font-bold border-b-2 border-b-gray-300'>My Address</h1>
-
-            {
-                toogleAddressEdit ?
-                    <form>
-                        <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 p-4'>
-                            <div>
-                                <label className='font-medium'>Your Current Country</label>
-                                <input type="text" placeholder="Bangladesh" className="input input-bordered w-full max-w-xs" />
-                            </div>
-                            <div>
-                                <label className='font-medium'>Your Current Town</label>
-                                <input type="text" placeholder="Dhaka" className="input input-bordered w-full max-w-xs" />
-                            </div>
-                            <div>
-                                <label className='font-medium'>Your Current Zip Code</label>
-                                <input type="text" placeholder="64611" className="input input-bordered w-full max-w-xs" />
-                            </div>
-                            <div>
-                                <label className='font-medium'>Your Permanent Country</label>
-                                <input type="text" placeholder="USA" className="input input-bordered w-full max-w-xs" />
-                            </div>
-                            <div>
-                                <label className='font-medium'>Your Permanent Town</label>
-                                <input type="text" placeholder="New York" className="input input-bordered w-full max-w-xs" />
-                            </div>
-                            <div>
-                                <label className='font-medium'>Your Permanent Zip</label>
-                                <input type="text" placeholder="75482" className="input input-bordered w-full max-w-xs" />
-                            </div>
-                        </div>
-                        <div className='text-center mb-1'>
-                            <button className='bg-green-600 font-semibold py-2 px-5 text-white rounded-full'>Update</button>
-                        </div>
-                    </form>
-                    :
-                    <div className='flex md:flex-row flex-col md:p-10 p-4 '>
-                        <div className='md:pr-28'>
-                            <h2 className='font-semibold text-blue-600'>Present Address</h2>
-                            <div className='grid lg:grid-cols-2 grid-cols-1 md:mt-5'>
-                                <div>
-                                    <h4 className='text-sm font-bold'>Your County</h4>
-                                    <p>Bangladesh</p>
-                                </div>
-                                <div className='lg:pl-10'>
-                                    <h4 className='text-sm font-bold'>Your Town</h4>
-                                    <p>Dhaka</p>
-                                </div>
-                                <div className='md:mt-5'>
-                                    <h4 className='text-sm font-bold'>Zip Code</h4>
-                                    <p>7830</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h2 className='font-semibold text-blue-600'>Permanent Address</h2>
-                            <div className='grid lg:grid-cols-2 grid-cols-1 md:mt-5'>
-                                <div>
-                                    <h4 className='text-sm font-bold'>Your County</h4>
-                                    <p>Bangladesh</p>
-                                </div>
-                                <div className='lg:pl-10'>
-                                    <h4 className='text-sm font-bold'>Your Town</h4>
-                                    <p>Dhaka</p>
-                                </div>
-                                <div className='md:mt-5'>
-                                    <h4 className='text-sm font-bold'>Zip Code</h4>
-                                    <p>7830</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            }
-
-            {
-                toogleAddressEdit ?
-                    <div className='text-center'>
-                        <button onClick={() => setToogleAddressEdit(!toogleAddressEdit)} className='bg-red-600 font-semibold py-2 px-5 text-white rounded-full'>Cancel Edit</button>
-                    </div>
-                    :
-                    <div className='text-center'>
-                        <button onClick={() => setToogleAddressEdit(!toogleAddressEdit)} className='bg-blue-600 font-semibold py-2 px-5 text-white rounded-full'>Edit Address</button>
-                    </div>
-            }
-        </section>
-    );
+      <div className="grid grid-cols-1 lg:grid-cols-2 mt-12">
+        {najmat?.map((service) => (
+          <Card service={service} key={service?._id}></Card>
+        ))}
+      </div>
+    </section>
+  );
 };
 
 export default Address;

@@ -89,27 +89,27 @@ const Footer = () => {
           <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:grid-cols-3">
             <div className="space-y-3">
               <h3 className="tracking-wide uppercase dark:text-gray-50">
-                Product
+                Services
               </h3>
               <ul className="space-y-1">
                 <li>
-                  <Link rel="" to="/">
-                    Features
+                  <Link rel="" to="/" className="hover:text-yellow-500">
+                    Traveling
                   </Link>
                 </li>
                 <li>
-                  <Link rel="noopener noreferrer" to="/">
-                    Integrations
+                  <Link rel="noopener noreferrer" className="hover:text-yellow-500" to="/">
+                    Constructing
                   </Link>
                 </li>
                 <li>
-                  <Link rel="noopener noreferrer" to="/">
-                    Pricing
+                  <Link rel="noopener noreferrer" className="hover:text-yellow-500" to="/">
+                    Consulting
                   </Link>
                 </li>
                 <li>
-                  <Link rel="noopener noreferrer" to="/">
-                    FAQ
+                  <Link rel="noopener noreferrer" className="hover:text-yellow-500" to="/">
+                    IT
                   </Link>
                 </li>
               </ul>
@@ -120,23 +120,23 @@ const Footer = () => {
               </h3>
               <ul className="space-y-1">
                 <li>
-                  <Link rel="noopener noreferrer" to="/company/623853b2e91c88cde579245e">
+                  <Link rel="noopener noreferrer" className="hover:text-yellow-500"  to="/company/623853b2e91c88cde579245e">
                   Najmat-Al-Yahar
                   </Link>
                 </li>
                 <li>
-                  <Link rel="" to="/company/623853b2d2ee71fb149b76c7">
-                  <span className="block">Mohammed Parvez</span> Information Technology
+                  <Link rel="" className="hover:text-yellow-500" to="/companies/parvez">
+                  <span className="block ">Mohammed Parvez</span> Information Technology
                   </Link>
                 </li>
                 <li>
-                  <Link rel="noopener noreferrer" to="/company/623853b2578d1ae0de9e6ad5">
+                  <Link rel="noopener noreferrer " className="hover:text-yellow-500" to="/companies/hasaim">
                   Hasaim international
                   </Link>
                 </li>
                 <li>
-                  <Link rel="noopener noreferrer" to="/company/623853b2614a311d5abafdd1">
-                  <span className="block">Sadikur Consultant &</span> Human resources R.S.L
+                  <Link rel="noopener noreferrer" className="hover:text-yellow-500" to="/company/sadikur">
+                  <span className="block ">Sadikur Consulting &</span> Human resources R.S.L
                   </Link>
                 </li>
               </ul>
@@ -145,15 +145,16 @@ const Footer = () => {
               <h3 className="uppercase dark:text-gray-50">Founder</h3>
               <ul className="space-y-1">
                 <li>
-                  <Link rel="noopener noreferrer" to="/">
+                  <Link rel="noopener noreferrer" className="hover:text-yellow-500"  to="/">
                     Sadikur Rahman
                   </Link>
                 </li>
                 <li className="flex mt-2">
-                <FaFacebookF></FaFacebookF>
-                    <FaLinkedinIn className=" mx-4"></FaLinkedinIn>
+                  <a href="https://m.facebook.com/profile.php?id=100006470061104" target={`_blank`}>
+                <FaFacebookF></FaFacebookF></a>
+                    <FaLinkedinIn className=" mx-4 pointer"></FaLinkedinIn>
                     <FaTwitter></FaTwitter>
-                    <FaYoutube className="ml-4"></FaYoutube>
+                    <FaYoutube className="ml-4 pointer"></FaYoutube>
                 </li>
               </ul>
             </div>

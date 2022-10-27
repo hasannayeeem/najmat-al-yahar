@@ -31,7 +31,7 @@ const [companies, setCompanies] = useState([]);
         <div className=" rounded-md w-4 h-1 mx-2 bg-[#ffd103]"></div>
         <div className=" rounded-md w-2 h-1 bg-[#030303]"></div>
       </div>
-<h1 className="text-sm my-4 text-center lg:px-80">In this era of mass production, as it is very hard to stand out with one product, najmat-al-yahar
+<h1 className="text-sm my-4 text-center lg:px-80">In this era of mass production, as it is very hard to stand out with one product, <span className="hover:text-yellow-500">saheda group </span>
 focuses on making the best in all sectors.</h1>
 
 <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-2 lg:px-20 px-12 pt-8 pb-24'>

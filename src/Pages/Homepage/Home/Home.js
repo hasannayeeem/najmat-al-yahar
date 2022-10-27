@@ -19,12 +19,12 @@ const Home = () => {
       {/* <Guide /> */}
       <Companies></Companies>
       {/* <Cards /> */}
-      <Statistics />
-      <Engineers />
-      <Projects />
+      {/* <Statistics /> */}
+      {/* <Engineers /> */}
+      {/* <Projects /> */}
       <Notice />
-      <Testimonials />
-      <Reviews />
+      {/* <Testimonials /> */}
+      {/* <Reviews /> */}
       <AboutUs></AboutUs>
       <Directors/>
       <Contact />

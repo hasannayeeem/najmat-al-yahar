@@ -108,14 +108,13 @@ const Header = () => {
            <FontAwesomeIcon className="text-blue-500 text-xl p-2 border-2 rounded-full border-blue-100 m-4" icon={faPhone}></FontAwesomeIcon>
             <div>
               <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`}>Telephone: +97143485089</p>
-              <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`} text-gray-400>Hot Line:</p>
             </div>
           </div>
           <div className="flex items-center">
           <FontAwesomeIcon className="text-blue-500 text-xl p-2 border-2 rounded-full border-blue-100 m-4" icon={faEnvelope}></FontAwesomeIcon>
             <div>
               <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`}>Email us</p>
-              <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`}>info@sahedagroup.net</p>
+              <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`}>sadikurr50@sahedagroup.net</p>
             </div>
           </div>
           <div className="flex items-center">
@@ -179,6 +178,14 @@ const Header = () => {
 							className={({ isActive }) =>
 								isActive ? 'activeLink' : 'navLink'
 							}
+							to={'/contact-us'}
+						>
+							Contact Us
+						</NavLink>
+						{/* <NavLink
+							className={({ isActive }) =>
+								isActive ? 'activeLink' : 'navLink'
+							}
 							to={'/services'}
 						>
 							Services
@@ -220,7 +227,7 @@ const Header = () => {
 							to={'/'}
 						>
 							Buy Apartment
-						</Link>
+						</Link> */}
 					</ul>
 
 					{/* desktop navbar  */}
@@ -253,7 +260,7 @@ const Header = () => {
 										Our Sister Concerns
 									</Link>
 								</li>
-								<li className='md:ml-2.5 md:hidden lg:block'>
+								{/* <li className='md:ml-2.5 md:hidden lg:block'>
 									<Link
 										to={'/services'}
 										className='py-2 inline-block md:text-white md:px-2 font-semibold'
@@ -261,7 +268,7 @@ const Header = () => {
 									>
 										Services
 									</Link>
-								</li>
+								</li> */}
 								<li className='md:ml-2.5 md:hidden lg:block'>
 									<Link
 										to={'/contact-us'}
@@ -271,7 +278,7 @@ const Header = () => {
 										Contact Us									</Link>
 								</li>
 
-								<li className='md:ml-2.5'>
+								{/* <li className='md:ml-2.5'>
 									<Link
 										to={'/media'}
 										className='py-2 inline-block md:text-white md:px-2 font-semibold'
@@ -318,18 +325,18 @@ const Header = () => {
 											<NotificationModal/>
 										)}
 									</div>
-								</li>
+								</li> */}
 
-								<Link to={'/profile'} className='avatar mx-2'>
+								{/* <Link to={'/profile'} className='avatar mx-2'>
 									<div className='w-9 rounded-full ring ring-error ring-offset-base-100 ring-offset-2'>
 										<img
 											src='https://placeimg.com/192/192/people'
 											alt='Profile'
 										/>
 									</div>
-								</Link>
+								</Link> */}
 
-								{user ? (
+								{/* {user ? (
 									<li className='md:ml-6 mt-3 md:mt-0'>
 										<a href='/'
 											onClick={() => signOut(auth)}
@@ -355,7 +362,7 @@ const Header = () => {
 											Login
 										</Link>
 									</li>
-								)}
+								)} */}
 							</ul>
 						</nav>
 					</div>

@@ -9,6 +9,7 @@ import useHasaim from '../../../hooks/useHasaim';
 import useSadikur from '../../../hooks/useSadikur';
 import useServices from '../../../hooks/useServices';
 import Card from '../Card/Card';
+import Cards from '../Cards/Cards';
 import Contact from '../Contact/Contact';
 
 const CompanyDetails = () => {
@@ -37,7 +38,7 @@ console.log(lc?.pathname);
     return (
         <div className='mx-auto'>
             {/* <h1 className="text-5xl border h-48 text-center">company Image or Logo{companies?.length}</h1> */}
-            <img className='cover w-screen opacity-50 h-[420px]' src="https://i.ibb.co/qB3dbCS/299165621-1355231408336068-1707150811493179633-n.jpg" alt="" />
+            <img className='cover w-screen opacity-80 h-[420px]' src="https://i.ibb.co/FgM7wJs/banner-2-01.jpg" alt="" />
             <div>
             <ul className="lg:text-2xl bg-yellow-400 border flex justify-around text-center">
                 <li><Link to={`/companies/sadikur`} className={`font-semibold hover:text-white hover:bg-error inline-block lg:px-28`}>Sadikur's</Link></li>
@@ -76,8 +77,12 @@ console.log(lc?.pathname);
                     
                     hasaim?.map(service => (<Card service={service} key={service?._id}></Card>))
                     }</div></div>
-                    : <p className='text-4xl text-error text-center my-24'>mohammed parvez services comming soon...</p>
-            
+                    : lc.pathname === '/companies/parvez' ?  <p className='text-4xl text-error text-center my-24'>mohammed parvez services comming soon...</p>
+                    : <div className='flex justify-center items-center pt-12 pb-20'>
+                    <div className='md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 space-y-4 md:space-y-0'>{
+                        
+                        sadikur?.map(service => (<Card service={service} key={service?._id}></Card>))
+                        }</div></div> 
             }</div>
 			
             

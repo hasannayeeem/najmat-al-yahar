@@ -16,9 +16,7 @@ const Notice = () => {
           style={{ fontFamily: "'Rajdhani', sans-serif" }}
           className="text-2xl"
         >
-          Construction notices are one of the most underrated tools in the
-          industry. Communication is, unfortunately, a big problem on
-          construction projects; and notices are a great way to start fixing it.
+          Saheda group is the mother company of Najmat-Al-Yahar,  Sadikur Consulting and Human Resource R.S.L, Hasaim International Travel and Ticketing, Mohammad parvez Information and Technology.
         </blockquote>
       </Marquee>
     </div>
