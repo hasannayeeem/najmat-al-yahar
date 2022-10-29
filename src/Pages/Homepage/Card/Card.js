@@ -9,7 +9,7 @@ const Card = ({ service }) => {
     <div>
       <div className={ `${darkMode ? "bg-teal-600 border-none" : "bg-white border-white border"} max-w-sm  px-6 pt-6 pb-2  shadow-lg transform hover:scale-105 transition duration-500 h-[480px]`}>
         <div className="relative">
-          <img className="w-full h-52" src={picture} alt="Colors" />
+          <img className="w-full h-52" src={picture} alt={title} />
           
         </div>
         <h1 className={`${darkMode ? "text-0" : "text-gray-800"} mt-4  text-2xl font-bold cursor-pointer`}>

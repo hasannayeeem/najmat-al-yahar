@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react"
-import { useLocation } from "react-router-dom";
 
 const useHasaim = () => {
-    const lc = useLocation();
     const [hasaim, setHasaim] = useState([]);
     useEffect( () =>{
         fetch('hasaim.json')
@@ -10,6 +8,6 @@ const useHasaim = () => {
         .then(data => setHasaim(data));
         
     },[hasaim,  setHasaim])
-    return [hasaim, setHasaim, lc?.pathname];
+    return [hasaim, setHasaim];
 }
 export default useHasaim;

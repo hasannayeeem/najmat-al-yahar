@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { GiCheckMark } from "react-icons/gi";
+import { Bounce } from "react-reveal";
 import { DarkModeContext } from "../../../App";
 
 const AboutUs = () => {
@@ -24,6 +25,7 @@ const AboutUs = () => {
         <div className=" rounded-md w-2 h-1 bg-[#030303]"></div>
       </div>
       <div className="flex capitalize flex-col sm:flex-row">
+        <Bounce left duration={1500}>
         <div className="w-10/12 sm:w-5/12">
           <div className="w-full block text-left">
             <img
@@ -32,13 +34,14 @@ const AboutUs = () => {
               className="w-full overflow-hidden h-full"
             />
           </div>
-        </div>
+        </div></Bounce>
         <div className=" w-5"></div>
+        <Bounce right duration={1500}>
         <div className="w-11/12 sm:w-6/12 text-center sm:text-left sm:mt-0 mt-8">
           {/* <h5 className="font-semibold">About Us</h5> */}
 
           <p className="py-3">
-            Mission and vision of Akij group of industries: In this era of mass
+            Mission and vision of saheda group of industries: In this era of mass
             production, as it is very hard to stand out with one product, Saheda
             Group focuses on making the best in all sectors. Any company’s
             vision is actually the dream to which the company always strives to
@@ -52,7 +55,7 @@ const AboutUs = () => {
             objectives which will make them able to be the leader from the
             challenger to the leader in the market
           </p>
-        </div>
+        </div></Bounce>
       </div>
     </div>
   );

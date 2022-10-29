@@ -1,11 +1,13 @@
 import React from "react";
+import toast from "react-hot-toast";
 import { Fade } from "react-reveal";
 
 const NewsLetter = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    // toast.success(`Successfully Subscibed`)
-    e.target.value.reset();
+    console.log(e.target.email.value);
+    e.target.email.value = '';
+    toast.success(`Successfully Subscibed`)
   };
   return (
     <div className="mt-7 sm:mt-10">

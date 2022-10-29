@@ -18,21 +18,38 @@
   left: 0;
 }
 .sk-akij-uddin::before {
-    background: #008aff;
-    right: 0;
-    position: absolute;
-    width: 3px;
-    height: 30px;
-    display: block;
-    content: "";
-    bottom: 2px;
+  background: #008aff;
+  right: 0;
+  position: absolute;
+  width: 3px;
+  height: 30px;
+  display: block;
+  content: "";
+  bottom: 2px;
 }
 .sk-akij-uddin::after {
-    content: "";
-    position: absolute;
-    background: #008aff;
-    width: 40px;
-    height: 3px;
-    bottom: 2px;
-    right: 0;
+  content: "";
+  position: absolute;
+  background: #008aff;
+  width: 40px;
+  height: 3px;
+  bottom: 2px;
+  right: 0;
+}
+.nav-item {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  transition: all 0.7s;
+  background: white;
+  border-radius: 5px;
+}
+.nav-link:hover::after {
+  width: 100%;
 }

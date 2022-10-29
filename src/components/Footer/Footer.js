@@ -120,8 +120,8 @@ const Footer = () => {
               </h3>
               <ul className="space-y-1">
                 <li>
-                  <Link rel="noopener noreferrer" className="hover:text-yellow-500"  to="/company/623853b2e91c88cde579245e">
-                  Najmat-Al-Yahar
+                  <Link rel="noopener noreferrer" className="hover:text-yellow-500"  to="/companies/najmat">
+                  <span className="block ">Nazmat Al Yahar </span>Building Contacting L.L.C
                   </Link>
                 </li>
                 <li>
@@ -135,7 +135,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link rel="noopener noreferrer" className="hover:text-yellow-500" to="/company/sadikur">
+                  <Link rel="noopener noreferrer" className="hover:text-yellow-500" to="/companies/sadikur">
                   <span className="block ">Sadikur Consulting &</span> Human resources R.S.L
                   </Link>
                 </li>
@@ -149,12 +149,15 @@ const Footer = () => {
                     Sadikur Rahman
                   </Link>
                 </li>
-                <li className="flex mt-2">
+                <li className="flex mt-2 text-yellow-500">
                   <a href="https://m.facebook.com/profile.php?id=100006470061104" target={`_blank`}>
-                <FaFacebookF></FaFacebookF></a>
-                    <FaLinkedinIn className=" mx-4 pointer"></FaLinkedinIn>
-                    <FaTwitter></FaTwitter>
-                    <FaYoutube className="ml-4 pointer"></FaYoutube>
+                <FaFacebookF className=" hover:text-white"></FaFacebookF></a>
+                <a href="/" target={`_blank`}>
+                    <FaLinkedinIn className=" mx-4 pointer hover:text-white"></FaLinkedinIn>
+                    </a><a href="/" target={`_blank`}>
+                    <FaTwitter className=" hover:text-white"></FaTwitter></a>
+                    <a href="/" target={`_blank`}>
+                    <FaYoutube className="ml-4 pointer hover:text-white"></FaYoutube></a>
                 </li>
               </ul>
             </div>

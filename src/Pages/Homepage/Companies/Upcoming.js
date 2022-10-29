@@ -1,23 +1,14 @@
 import React from 'react';
-import { useEffect } from 'react';
 import { useState } from 'react';
-import Card from '../Card/Card';
+import { Zoom } from 'react-reveal';
 
-const Najmat = () => {
+const Upcoming = () => {
     const [darkMode, setDarkMode] = useState(false);
-    const [najmat, setNajmat] = useState([]);
-    useEffect( () =>{
-        fetch('https://neighbour-home--server.herokuapp.com/constructor')
-        .then(res => res.json())
-        .then(data => setNajmat(data));
-        
-    },[najmat,  setNajmat]);
-
-
-  return (
-    <section>
+    return (
+        <div>
+                <section>
       <h1 className="text-center text-3xl py-3 font-bold border-b-2 border-b-gray-300">
-        Welcome To Najmat Al Yahar </h1>
+        Welcome To Hasaim International </h1>
       <h2
         style={{ fontFamily: "'Rajdhani', sans-serif" }}
         className={`${
@@ -31,13 +22,17 @@ const Najmat = () => {
         <div className=" rounded-md w-2 h-1 bg-[#030303]"></div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 lg:ml-6 py-8 mx-auto gap-y-8 mt-12">
-        {najmat?.map((service) => (
+      {/* <div className="grid grid-cols-1 lg:grid-cols-2 mt-12">
+        {hasaim?.map((service) => (
           <Card service={service} key={service?._id}></Card>
         ))}
-      </div>
+      </div> */}
     </section>
-  );
+            <Zoom>
+                <h1 className='text-2xl text-center my-48'>Upcoming Soon... </h1>
+            </Zoom>
+        </div>
+    );
 };
 
-export default Najmat;
+export default Upcoming;

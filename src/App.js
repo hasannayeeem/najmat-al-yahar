@@ -37,6 +37,11 @@ import Projects from "./Pages/Homepage/projects/Projects";
 import Cards from "./Pages/Homepage/Cards/Cards";
 import Companies from "./Pages/Homepage/Companies/Companies";
 import CompanyProfile from "./Pages/Profile/MyProfile/CompanyProfile";
+import Hasaim from "./Pages/Homepage/Companies/Hasaim";
+import Upcoming from "./Pages/Homepage/Companies/Upcoming";
+import Najmat from "./Pages/Homepage/Companies/Najmat";
+import Sadikur from "./Pages/Homepage/Companies/Sadikur";
+import Pervez from "./Pages/Homepage/Companies/Pervez";
 
 export const DarkModeContext = createContext("");
 const queryClient = new QueryClient();
@@ -49,7 +54,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, [2000]);
+    }, [2500]);
   }, []);
 
   return (
@@ -117,11 +122,11 @@ function App() {
                 {/* Profile Routes */}
                 <Route path="/companies" element={<Profile />}>
                   <Route index element={<CompanyProfile />}></Route>
-                  <Route path="najmat" element={<Address />}></Route>
-                  <Route path="sadikur" element={<Address />}></Route>
-                  <Route path="hasaim" element={<Address />}></Route>
-                  <Route path="parvez" element={<Address />}></Route>
-                  <Route path="upcoming..." element={<Address />}></Route>
+                  <Route path="najmat" element={<Najmat />}></Route>
+                  <Route path="sadikur" element={<Sadikur />}></Route>
+                  <Route path="hasaim" element={<Hasaim />}></Route>
+                  <Route path="parvez" element={<Pervez />}></Route>
+                  <Route path="upcoming..." element={<Upcoming />}></Route>
                 </Route>
                 <Route path="*" element={<NotFound />} />
               </Routes>

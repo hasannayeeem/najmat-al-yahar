@@ -129,7 +129,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className='flex bg-[#1662dc] flex-wrap items-center justify-between lg:justify-center py-6 sm:px-2 px-5'>
+      <div className='flex bg-[#1662dc] flex-wrap items-center justify-between lg:justify-center py-4 sm:px-2 px-5'>
 					
 
 					<span
@@ -232,30 +232,30 @@ const Header = () => {
 
 					{/* desktop navbar  */}
 					<div className='hidden md:block w-full md:w-auto' id='menu'>
-						<nav className='w-full bg-white text-black  md:bg-transparent rounded shadow-lg px-6 py-10 mt-4 text-center md:p-0 md:mt-0 md:shadow-none'>
+						<nav className='w-full bg-white text-black  md:bg-transparent rounded shadow-lg py-0 mt-4 text-center md:p-0 md:mt-0 md:shadow-none'>
 							<ul className='md:flex items-center'>
-								<li>
+								<li className="nav-item">
 									<Link
 										to={'/'}
-										className={`py-2 inline-block ${colorChange ? 'text-black' :''} md:text-white md:hidden lg:block font-semibold`}
+										className={`nav-link py-1 inline-block ${colorChange ? 'text-black' :''} md:text-white lg:px-2 md:hidden lg:block font-semibold`}
 										href='#'
 									>
 										Home
 									</Link>
 								</li>
-								<li className='md:ml-2.5'>
+								<li className='md:ml-2.5 nav-item'>
 									<Link
 										to={'/about'}
-										className='py-2 inline-block md:text-white md:px-2 font-semibold'
+										className='nav-link py-1 inline-block md:text-white md:px-2 font-semibold'
 										href='#'
 									>
 										About
 									</Link>
 								</li>
-								<li className='md:ml-2.5'>
+								<li className='md:ml-2.5 nav-item'>
 									<Link
 										to={'/companies'}
-										className='py-2 inline-block md:text-white md:px-2 font-semibold'
+										className='nav-link py-1 inline-block md:text-white md:px-2 font-semibold'
 									>
 										Our Sister Concerns
 									</Link>
@@ -269,10 +269,10 @@ const Header = () => {
 										Services
 									</Link>
 								</li> */}
-								<li className='md:ml-2.5 md:hidden lg:block'>
+								<li className='md:ml-2.5 md:hidden lg:block nav-item'>
 									<Link
 										to={'/contact-us'}
-										className='py-2 inline-block md:text-white md:px-2 font-semibold'
+										className='nav-link py-1 inline-block md:text-white md:px-2 font-semibold'
 										href='#'
 									>
 										Contact Us									</Link>

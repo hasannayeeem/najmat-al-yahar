@@ -10,7 +10,7 @@
 
 /* scrollbar design here */
 html::-webkit-scrollbar{
-  width: 0.4rem;
+  width: 0.5rem;
 }
 
 html::-webkit-scrollbar-track{
