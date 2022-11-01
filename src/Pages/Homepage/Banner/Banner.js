@@ -12,13 +12,13 @@ const Banner = () => {
           className={`${
             darkMode ? "bg-gray-900" : "bg-blue-900"
           } duration-300 cover bg-blue-teal-gradient text-center sm:text-left relative   px-4 sm:px-8 lg:px-16 xl:px-28 2xl:px-64 overflow-hidden sm:py-48 flex
-				items-end sm:items-center h-[550px]  sm:pb-40 pb-16  sm:min-h-screen`}
+				items-end sm:items-center lg:h-[550px]  sm:pb-40 pb-16  h-80`}
         >
-          <div className="h-full absolute top-0 left-0 right-0 z-0">
+          <div className="lg:h-full h-80 absolute top-0 left-0 right-0 z-0">
             <img
               src="https://bangladeshpost.net/webroot/uploads/featureimage/2019-12/5df111b34395a.jpg"
               alt=""
-              className="w-full h-full object-cover opacity-20"
+              className="w-full lg:h-full h-80 object-cover opacity-20"
             />
           </div>
 
@@ -44,64 +44,18 @@ const Banner = () => {
           </a>
         </div>
       </div>
-      <div id="slide2" className="carousel-item relative w-full">
-        <section
-          className={`${
-            darkMode ? "bg-gray-900" : "bg-blue-900"
-          } duration-300 cover bg-blue-teal-gradient text-center sm:text-left relative   px-4 sm:px-8 lg:px-16 xl:px-28 2xl:px-64 overflow-hidden sm:py-48 flex
-				items-end sm:items-center h-[550px]  sm:pb-40 pb-16  sm:min-h-screen`}
-        >
-          <div className="h-full absolute top-0 left-0 right-0 z-0">
-            <img
-              src="https://bangladeshpost.net/webroot/uploads/featureimage/2019-12/5df111b34395a.jpg"
-              alt=""
-              className="w-full h-full object-cover opacity-20"
-            />
-          </div>
-
-          <div className="lg:w-3/4 xl:w-7/12 relative z-10 h-100 lg:mt-16">
-            <div>
-              <h1 className="text-white text-3xl sm:text-4xl font-bold leading-tight">
-                Welcome to Building Contraction Innovative for a better Tomorrow
-              </h1>
-              <p className="text-blue-100 md:text-lg leading-snug mt-2 sm:px-0 px-5 sm:mt-4">
-                Building construction means any physical activity on the site
-                involved in the erection of a structure, cladding, external
-                finish, formwork, fixture, fitting of service installation
-              </p>
-              
-            </div>
-          </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide1" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </section>
-        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide1" className="btn btn-circle">
-            ❮
-          </a>
-          <a href="#slide3" className="btn btn-circle">
-            ❯
-          </a>
-        </div>
-      </div>
-      <div id="slide3" className="carousel-item relative w-full">
+      <div id="slide1" className="carousel-item relative w-full">
 	  <section
           className={`${
             darkMode ? "bg-gray-900" : "bg-blue-900"
           } duration-300 cover bg-blue-teal-gradient text-center sm:text-left relative   px-4 sm:px-8 lg:px-16 xl:px-28 2xl:px-64 overflow-hidden sm:py-48 flex
-				items-end sm:items-center h-[550px]  sm:pb-40 pb-16  sm:min-h-screen`}
+				items-end sm:items-center lg:h-[550px]  sm:pb-40 pb-16  h-80`}
         >
-          <div className="h-full absolute top-0 left-0 right-0 z-0">
+          <div className="lg:h-full h-80 absolute top-0 left-0 right-0 z-0">
             <img
               src="https://bangladeshpost.net/webroot/uploads/featureimage/2019-12/5df111b34395a.jpg"
               alt=""
-              className="w-full h-full object-cover opacity-20"
+              className="w-full lg:h-full h-80 object-cover opacity-20"
             />
           </div>
 
@@ -115,31 +69,30 @@ const Banner = () => {
                 involved in the erection of a structure, cladding, external
                 finish, formwork, fixture, fitting of service installation
               </p>
-              
             </div>
           </div>
         </section>
         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide2" className="btn btn-circle">
+          <a href="#slide4" className="btn btn-circle">
             ❮
           </a>
-          <a href="#slide4" className="btn btn-circle">
+          <a href="#slide2" className="btn btn-circle">
             ❯
           </a>
         </div>
       </div>
-      <div id="slide4" className="carousel-item relative w-full">
-        <section
+      <div id="slide1" className="carousel-item relative w-full">
+	  <section
           className={`${
             darkMode ? "bg-gray-900" : "bg-blue-900"
           } duration-300 cover bg-blue-teal-gradient text-center sm:text-left relative   px-4 sm:px-8 lg:px-16 xl:px-28 2xl:px-64 overflow-hidden sm:py-48 flex
-				items-end sm:items-center h-[550px]  sm:pb-40 pb-16  sm:min-h-screen`}
+				items-end sm:items-center lg:h-[550px]  sm:pb-40 pb-16  h-80`}
         >
-          <div className="h-full absolute top-0 left-0 right-0 z-0">
+          <div className="lg:h-full h-80 absolute top-0 left-0 right-0 z-0">
             <img
               src="https://bangladeshpost.net/webroot/uploads/featureimage/2019-12/5df111b34395a.jpg"
               alt=""
-              className="w-full h-full object-cover opacity-20"
+              className="w-full lg:h-full h-80 object-cover opacity-20"
             />
           </div>
 
@@ -153,15 +106,14 @@ const Banner = () => {
                 involved in the erection of a structure, cladding, external
                 finish, formwork, fixture, fitting of service installation
               </p>
-              
             </div>
           </div>
         </section>
         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide3" className="btn btn-circle">
+          <a href="#slide4" className="btn btn-circle">
             ❮
           </a>
-          <a href="#slide1" className="btn btn-circle">
+          <a href="#slide2" className="btn btn-circle">
             ❯
           </a>
         </div>

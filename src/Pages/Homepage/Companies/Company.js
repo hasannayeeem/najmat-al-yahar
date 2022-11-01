@@ -12,7 +12,7 @@ const Company = ({company}) => {
             <Rotate top left>
             <div className="lg:max-w-lg py-5 transform hover:-translate-y-2 transition duration-500">
             <figure className="">
-                <img src={img} alt={title} className=" w-48 mx-auto h-48 shadow-lg rounded-xl" />
+                <img src={img} alt={title} className="p-4 w-48 mx-auto h-48 shadow-lg rounded-xl" />
             </figure>
             <div className=" text-center mt-3">
                 <Link to={`/companies/${name}`} className='d-block'>

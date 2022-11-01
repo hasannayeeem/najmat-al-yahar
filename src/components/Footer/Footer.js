@@ -15,7 +15,6 @@ const Footer = () => {
             to="/"
             className="flex justify-center space-x-3 lg:justify-start"
           >
-            <div className="flex items-center justify-center w-12 h-12 rounded-full dark:bg-violet-400"></div>
             <img className="w-full my-auto px-6" src={logo_v2} alt="" />
           </Link>
         </div>
