@@ -24,7 +24,7 @@ const AboutUs = () => {
         <div className=" rounded-md w-4 h-1 mx-2 bg-[#ffd103]"></div>
         <div className=" rounded-md w-2 h-1 bg-[#030303]"></div>
       </div>
-      <div className="flex capitalize flex-col sm:flex-row">
+      <div className="flex lg:max-w-[1210px] mx-auto capitalize flex-col sm:flex-row">
         <Bounce left duration={1500}>
         <div className="w-10/12 sm:w-5/12">
           <div className="w-full block text-left">

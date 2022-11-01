@@ -34,7 +34,7 @@ const Profile = () => {
                 src="https://i.ibb.co/zsNv330/sadikur-consultant.png"
                 className="w-12 h-12"
                 alt="logo"
-              />Sadikur Consultant & Human resources R.S.L
+              />Sadikur Consultant & Human resources S.R.L
               </Link>
             </li>
             <li className="w-full font-semibold ">
@@ -56,6 +56,16 @@ const Profile = () => {
                 className="w-12 h-12"
                 alt="logo"
               />Mohammad Parvez Information Technology
+              </Link>
+            </li>
+            <li className="w-full font-semibold">
+              
+              <Link to="/companies/rayhan" className="flex">
+                <img
+                src="https://i.ibb.co/n7Km9n3/CAR-WASHING.png"
+                className="w-12 h-12"
+                alt="logo"
+              />Rayhan Uddin Parking Car Washing
               </Link>
             </li>
             <li className="w-full font-semibold">

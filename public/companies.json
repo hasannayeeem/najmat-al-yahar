@@ -4,7 +4,7 @@
     "title": "Najmat-Al-Yahar",
     "name": "najmat",
     "type": "New Trending",
-    "img": "https://i.ibb.co/xJh9vr8/Untitled-2.png",
+    "img": "https://sahedagroup.net/assets/images/najmat.png",
     "duration": "90 days",
     "assignment": "9 Assignment",
     "pervezs": [
@@ -42,10 +42,10 @@
     {
       "_id": "623853b2614a311d5abafdd1",
       "index": 1,
-      "title": "Sadikur Consulting & Human resources R.S.L",
+      "title": "Sadikur Consulting & Human resources S.R.L",
       "name": "sadikur",
       "type": "New Trending",
-      "img": "https://i.ibb.co/zsNv330/sadikur-consultant.png",
+      "img": "https://sahedagroup.net/assets/images/sadikur-consultant.png",
       "duration": "90 days",
       "assignment": "9 Assignment",
       "sadikurs": [
@@ -112,7 +112,7 @@
       "title": "Hasaim international",
       "name": "hasaim",
       "type": "New Trending",
-      "img": "https://i.ibb.co/XjQQ0Tx/hasaim.png",
+      "img": "https://sahedagroup.net/assets/images/hasaim.png",
       "duration": "90 days",
       "assignment": "9 Assignment",
       "hasaims": [
@@ -192,7 +192,7 @@
       "title": "Mohammad Parvez Information Technology",
       "name": "parvez",
       "type": "New Trending",
-      "img": "https://i.ibb.co/Dr3W1kY/parvez.png",
+      "img": "https://sahedagroup.net/assets/images/parvez.png",
       "duration": "90 days",
       "pervezs": [
         {
@@ -281,10 +281,51 @@
     {
       "_id": "623853b2e91c88cde579245e",
       "index": 3,
-      "title": "Upcomming...",
-      "name": "commin soon",
+      "title": "Rayhan Uddin Parking Car Washing",
+      "name": "rayhan",
       "type": "New Trending",
-      "img": "https://i.ibb.co/VwFPQYm/comming.png",
+      "img": "https://sahedagroup.net/assets/images/comming.png",
+      "duration": "90 days",
+      "assignment": "9 Assignment",
+      "pervezs": [
+        {
+          "_id": "623853b2614a311d5abafdd1",
+          "index": 0,
+          "title": "Mega Mall Construction",
+          "type": "New Trending",
+          "picture": "https://nepirockcastle.com/wp-content/uploads/2019/03/nepi-MEGA-MALL-ROMANIA-1.jpg",
+          "duration": "90 days",
+          "assignment": "9 Assignment",
+          "discount": "17% Discount",
+          "price": "$32",
+          "category": "one",
+          "description": "We are providing big mall project for you. You can choose our designed projects or meet our engineers for custom build your project"
+        },
+        {
+          "_id": "623853b2578d1ae0de9e6ad5",
+          "index": 1,
+          "title": "Highway Repairing",
+          "type": "New Trending",
+          "picture": "https://simex.com.bd/wp-content/uploads/2021/05/Fugear-1Construction-%E2%80%93-SIMEX-Bangladesh-1200x720.jpg",
+          "duration": "90 days",
+          "assignment": "9 Assignment",
+          "discount": "17% Discount",
+          "price": "$32",
+          "category": "two",
+          "description": "We are providing repairing service for your old project. You can choose our designed projects or meet our engineers for custom build your project"
+        }
+      ],
+      "discount": "17% Discount",
+      "price": "$32",
+      "description": "We have lot of Architecture Engineers. You can Design your project from us. We providing lifetime support for every customer."
+    },
+    {
+      "_id": "623853b2e91c88cde579245e",
+      "index": 3,
+      "title": "Upcomming...",
+      "name": "Saheda Properties LTD.",
+      "type": "New Trending",
+      "img": "https://sahedagroup.net/assets/images/comming.png",
       "duration": "90 days",
       "assignment": "9 Assignment",
       "pervezs": [

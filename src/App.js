@@ -42,6 +42,7 @@ import Upcoming from "./Pages/Homepage/Companies/Upcoming";
 import Najmat from "./Pages/Homepage/Companies/Najmat";
 import Sadikur from "./Pages/Homepage/Companies/Sadikur";
 import Pervez from "./Pages/Homepage/Companies/Pervez";
+import Rayhan from "./Pages/Homepage/Companies/Rayhan";
 
 export const DarkModeContext = createContext("");
 const queryClient = new QueryClient();
@@ -126,6 +127,7 @@ function App() {
                   <Route path="sadikur" element={<Sadikur />}></Route>
                   <Route path="hasaim" element={<Hasaim />}></Route>
                   <Route path="parvez" element={<Pervez />}></Route>
+                  <Route path="rayhan" element={<Rayhan />}></Route>
                   <Route path="upcoming..." element={<Upcoming />}></Route>
                 </Route>
                 <Route path="*" element={<NotFound />} />

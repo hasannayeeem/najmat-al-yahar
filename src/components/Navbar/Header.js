@@ -45,7 +45,7 @@ const Header = () => {
   return (
     <div>
       <div className="w-full bg-[#f7f7f7]">
-        <div className="max-w-[1140px] m-auto grid grid-cols-2">
+        <div className="lg:max-w-[1210px] m-auto grid grid-cols-2">
           <div className="flex gap-5 items-center p-2">
             <small>Follow Us</small>
             <div className="flex gap-1">
@@ -99,7 +99,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="lg:max-w-[1140px] m-auto pb-1 px-3 hidden lg:block lg:flex justify-between">
+      <div className="lg:max-w-[1210px] m-auto pb-1 px-3 hidden lg:block lg:flex justify-between">
         <div className="flex items-center">
           <img className="w-24 h-24 p-2" src={logo_v3} alt="" />
         </div>
@@ -129,7 +129,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className='flex bg-[#1662dc] flex-wrap items-center justify-between lg:justify-center py-4 sm:px-2 px-5'>
+      <div className=' flex bg-[#1662dc] flex-wrap items-center justify-between lg:justify-center py-4 sm:px-2 px-5'>
 					
 
 					<span

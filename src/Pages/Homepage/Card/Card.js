@@ -19,8 +19,8 @@ const Card = ({ service }) => {
           {description}
         </p>
         <div className="my-4">
-          <Link to={`/details/${category}`} className='d-block'>
-            <button className='mt-4 text-xl w-full text-black bg-warning py-2 rounded shadow-lg'>Details</button>
+          <Link to={`/contact-us`} className='d-block'>
+            <button className='mt-4 text-xl w-full text-black bg-warning py-2 rounded shadow-lg'>Contact Us</button>
           </Link>
         </div>
       </div>
