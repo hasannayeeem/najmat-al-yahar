@@ -72,7 +72,7 @@ const Profile = () => {
               
               <Link to="/companies/upcoming..." className="flex">
                 <img
-                src="https://i.ibb.co/VwFPQYm/comming.png"
+                src="https://sahedagroup.net/assets/images/carwash.png"
                 className="w-12 h-12"
                 alt="logo"
               />
