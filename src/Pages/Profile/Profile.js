@@ -21,7 +21,7 @@ const Profile = () => {
             <li className="w-full font-semibold">
               <Link to="/companies/najmat">
               <img
-                src="https://i.ibb.co/xJh9vr8/Untitled-2.png"
+                src="https://sahedagroup.net/assets/images/najmat.png"
                 className="w-12 h-12"
                 alt="logo"
               />
@@ -31,7 +31,7 @@ const Profile = () => {
             <li className="w-full font-semibold">
               <Link to="/companies/sadikur">
                 <img
-                src="https://i.ibb.co/zsNv330/sadikur-consultant.png"
+                src="https://sahedagroup.net/assets/images/sadikur-consultant.png"
                 className="w-12 h-12"
                 alt="logo"
               />Sadikur Consultant & Human resources S.R.L
@@ -52,7 +52,7 @@ const Profile = () => {
               
               <Link to="/companies/parvez" className="flex">
                 <img
-                src="https://i.ibb.co/Dr3W1kY/parvez.png"
+                src="https://sahedagroup.net/assets/images/parvez.png"
                 className="w-12 h-12"
                 alt="logo"
               />Mohammad Parvez Information Technology
@@ -62,7 +62,7 @@ const Profile = () => {
               
               <Link to="/companies/rayhan" className="flex">
                 <img
-                src="https://i.ibb.co/n7Km9n3/CAR-WASHING.png"
+                src="https://sahedagroup.net/assets/images/carwash.png"
                 className="w-12 h-12"
                 alt="logo"
               />Rayhan Uddin Parking Car Washing
@@ -72,11 +72,11 @@ const Profile = () => {
               
               <Link to="/companies/upcoming..." className="flex">
                 <img
-                src="https://sahedagroup.net/assets/images/carwash.png"
+                src="https://sahedagroup.net/assets/images/comming.png"
                 className="w-12 h-12"
                 alt="logo"
               />
-              upcoming...
+              upcoming..
               </Link>
             </li>
           </ul>
