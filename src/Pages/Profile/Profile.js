@@ -76,7 +76,7 @@ const Profile = () => {
                 className="w-12 h-12"
                 alt="logo"
               />
-              upcoming..
+              upcoming...
               </Link>
             </li>
           </ul>
