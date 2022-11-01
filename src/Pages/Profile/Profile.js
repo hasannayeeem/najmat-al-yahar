@@ -41,7 +41,7 @@ const Profile = () => {
               
               <Link to="/companies/hasaim" className="flex">
                 <img
-                src="https://i.ibb.co/XjQQ0Tx/hasaim.png"
+                src="https://sahedagroup.net/assets/images/hasaim.png"
                 className="w-12 h-12"
                 alt="logo"
               />

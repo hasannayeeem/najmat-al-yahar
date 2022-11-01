@@ -135,7 +135,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link rel="noopener noreferrer" className="hover:text-yellow-500" to="/companies/sadikur">
-                  <span className="block ">Sadikur Consulting &</span> Human resources R.S.L
+                  <span className="block ">Sadikur Consulting &</span> Human resources S.R.L
                   </Link>
                 </li>
               </ul>
