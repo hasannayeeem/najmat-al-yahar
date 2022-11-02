@@ -55,7 +55,7 @@ const Profile = () => {
                 src="https://sahedagroup.net/assets/images/parvez.png"
                 className="w-12 h-12"
                 alt="logo"
-              />Mohammad Parvez Information Technology
+              />Mohammed Parvez Information Technology
               </Link>
             </li>
             <li className="w-full font-semibold">

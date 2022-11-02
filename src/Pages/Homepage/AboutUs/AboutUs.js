@@ -29,7 +29,7 @@ const AboutUs = () => {
         <div className="w-10/12 sm:w-5/12">
           <div className="w-full block text-left">
             <img
-              src="https://i.ibb.co/bgYpRc7/undraw-Online-page-re-lhgx.png"
+              src="https://sahedagroup.net/assets/images/about.png"
               alt=""
               className="w-full overflow-hidden h-full"
             />

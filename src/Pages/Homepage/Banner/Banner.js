@@ -22,9 +22,9 @@ const Banner = () => {
             />
           </div>
 
-          <div className="lg:w-3/4 xl:w-7/12 relative z-10 h-100 lg:mt-16">
+          <div className="lg:w-3/4 xl:w-7/12 relative h-100 z-10 lg:mt-16">
             <div>
-              <h1 className="text-white text-3xl sm:text-4xl font-bold leading-tight">
+              <h1 className="text-white text-3xl sm:text-4xl -z-50 font-bold leading-tight">
                 Welcome to Building Contraction Innovative for a better Tomorrow
               </h1>
               <p className="text-blue-100 md:text-lg leading-snug mt-2 sm:px-0 px-5 sm:mt-4">
@@ -35,11 +35,11 @@ const Banner = () => {
             </div>
           </div>
         </section>
-        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide3" className="btn btn-circle">
+        <div className="absolute flex justify-between transform -translate-y-1/2 left-6 right-6 top-1/2">
+          <a href="#slide3" className="text-3xl text-white">
             ❮
           </a>
-          <a href="#slide2" className="btn btn-circle">
+          <a href="#slide2" className="text-3xl text-white">
             ❯
           </a>
         </div>
@@ -61,7 +61,7 @@ const Banner = () => {
 
           <div className="lg:w-3/4 xl:w-7/12 relative z-10 h-100 lg:mt-16">
             <div>
-              <h1 className="text-white text-3xl sm:text-4xl font-bold leading-tight">
+              <h1 className="text-white text-3xl sm:text-4xl -z-50 font-bold leading-tight">
                 Welcome to Building Contraction Innovative for a better Tomorrow
               </h1>
               <p className="text-blue-100 md:text-lg leading-snug mt-2 sm:px-0 px-5 sm:mt-4">
@@ -72,11 +72,11 @@ const Banner = () => {
             </div>
           </div>
         </section>
-        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide1" className="btn btn-circle">
+        <div className="absolute flex justify-between transform -translate-y-1/2 left-6 right-6 top-1/2">
+          <a href="#slide1" className="text-3xl text-white">
             ❮
           </a>
-          <a href="#slide3" className="btn btn-circle">
+          <a href="#slide3" className="text-3xl text-white">
             ❯
           </a>
         </div>
@@ -98,7 +98,7 @@ const Banner = () => {
 
           <div className="lg:w-3/4 xl:w-7/12 relative z-10 h-100 lg:mt-16">
             <div>
-              <h1 className="text-white text-3xl sm:text-4xl font-bold leading-tight">
+              <h1 className="text-white text-3xl sm:text-4xl -z-50 font-bold leading-tight">
                 Welcome to Building Contraction Innovative for a better Tomorrow
               </h1>
               <p className="text-blue-100 md:text-lg leading-snug mt-2 sm:px-0 px-5 sm:mt-4">
@@ -109,11 +109,11 @@ const Banner = () => {
             </div>
           </div>
         </section>
-        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide2" className="btn btn-circle">
+        <div className="absolute flex justify-between transform -translate-y-1/2 left-6 right-6 top-1/2">
+          <a href="#slide2" className="text-3xl text-white">
             ❮
           </a>
-          <a href="#slide1" className="btn btn-circle">
+          <a href="#slide1" className="text-3xl text-white">
             ❯
           </a>
         </div>
@@ -133,7 +133,7 @@ const Banner = () => {
     // 				/>
     // 			</div>
 
-    // 			<div className='lg:w-3/4 xl:w-7/12 relative z-10 h-100 lg:mt-16'>
+    // 			<div className='lg:w-3/4 xl:w-7/12 relative h-100 lg:mt-16'>
     // 				<div>
     // 					<h1 className='text-white text-3xl sm:text-4xl font-bold leading-tight'>
     // 						Welcome to Building Contraction Innovative for a better

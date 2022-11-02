@@ -93,7 +93,7 @@ const Header = () => {
 
 					<ul
 						onClick={navBtnHndle}
-						className={`mobile-manu flex md:hidden flex-col text-center z-10   left-0 w-full bg-white  absolute  py-4 duration-500 ${
+						className={`mobile-manu flex md:hidden flex-col text-center z-50   left-0 w-full bg-white  absolute  py-4 duration-500 ${
 							toggle ? ' opacity-100  top-[55px]' : ' top-[-350px] opacity-0'
 						}`}
 					>

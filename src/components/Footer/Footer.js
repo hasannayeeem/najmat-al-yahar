@@ -164,9 +164,9 @@ const Footer = () => {
         </div>
         <div className="py-6 text-sm text-center dark:text-gray-400">
           © {date}{" "}
-          <Link className="text-yellow-500 mr-1" to="https://sahedagroup.net/" >
+          <a className="text-yellow-500 mr-1" href="https://sahedagroup.net/" >
             SahedaGroup  
-          </Link>
+          </a>
             All rights reserved.
              {/* <span className="text-xs">Developed By <a href="https://nayeemhasan.web.app" target={`_blank`} className="text-xs text-yellow-500">Nayeem Hasan</a></span> */}
         </div>
