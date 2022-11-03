@@ -43,10 +43,10 @@ const Header = () => {
 		}
 	}
   return (
-    <div>
+    <div className="fixed top-0 z-50 lg:w-full">
 
-      
-      <div className="lg:max-w-[1210px] m-auto pb-1 px-3 hidden lg:block lg:flex justify-between">
+      <div className="bg-white">
+		<div className="lg:max-w-[1210px]  m-auto pb-1 px-3 hidden lg:block lg:flex justify-between">
         <div className="flex items-center">
           <img className="w-24 h-24 p-2" src={logo_v3} alt="" />
         </div>
@@ -76,7 +76,9 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className=' flex bg-[#1662dc] flex-wrap items-center justify-between lg:justify-center py-4 sm:px-2 px-5'>
+	  </div>
+      
+      <div className=' flex bg-[#1662dc]  items-center w-screen justify-between lg:justify-center py-4 sm:px-2 px-5'>
 					
 
 					<span

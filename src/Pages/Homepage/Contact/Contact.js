@@ -4,8 +4,10 @@ import { DarkModeContext } from "../../../App";
 import contact from "../../../Assest/Contact.gif";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
+import { useLocation } from "react-router-dom";
 
 const Contact = () => {
+  const homePage = useLocation().pathname === '/';
   const [darkMode] = useContext(DarkModeContext);
   const {
     register,
@@ -16,6 +18,7 @@ const Contact = () => {
   const form = useRef();
 
   const sendEmail = (data) => {
+    
     // console.log(data)
     // let emailData = {
     //     email: data.email,
@@ -45,7 +48,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="flex justify-center items-center" id="contactUs">
+    <section className={`flex  ${homePage ? '' : 'lg:mt-[170px]'} mt-20 justify-center items-center`} id="contactUs">
       <div className="w-[60%] px-3 hidden md:block">
         <img className="w-full" src={contact} alt="" />
       </div>

@@ -2,12 +2,14 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useContext } from "react";
+import { useLocation } from "react-router-dom";
 import { DarkModeContext } from "../../../App";
 import Company from "./Company";
 
 const Companies = () => {
   const [darkMode] = useContext(DarkModeContext);
 const [companies, setCompanies] = useState([]);
+const homePage = useLocation().pathname === '/';
 
   useEffect(() => {
     fetch("companies.json")
@@ -16,7 +18,7 @@ const [companies, setCompanies] = useState([]);
   }, []);
 
   return (
-    <div className="pt-20" id="companies">
+    <div className="lg:pt-12 pt-8" id="companies">
       <h2
         style={{ fontFamily: "'Rajdhani', sans-serif" }}
         className={`${
@@ -34,7 +36,7 @@ const [companies, setCompanies] = useState([]);
 <h1 className="text-sm my-4 text-center lg:px-80">In this era of mass production, as it is very hard to stand out with one product, <span className="hover:text-yellow-500">saheda group </span>
 focuses on making the best in all sectors.</h1>
 
-<div className='grid lg:max-w-[1210px] mx-auto grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2 lg:px-20 px-12 pt-8 pb-24'>
+<div className='grid lg:max-w-[1210px] mx-auto grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 lg:px-2 pt-8 pb-24'>
                 {
                     companies.map(company => <Company
                         key={company._id}

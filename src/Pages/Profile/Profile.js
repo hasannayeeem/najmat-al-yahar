@@ -4,7 +4,7 @@ import logo from '../../Assest/images/sahedaFooter.png'
 
 const Profile = () => {
   return (
-    <section className="mt-[40px] ">
+    <section className="lg:mt-[160px] ">
       <div className=" flex flex-col justify-center md:flex-row">
         <div className="md:w-1/3 w-full">
           <ul className="menu p-4 overflow-y-auto md:w-80 bg-base-100 text-base-content border m-3 shadow mx-auto">
@@ -72,7 +72,7 @@ const Profile = () => {
               
               <Link to="/companies/upcoming..." className="flex">
                 <img
-                src="https://sahedagroup.net/assets/images/comming.png"
+                src="https://sahedagroup.net/assets/images/saheda-propirties.png"
                 className="w-12 h-12"
                 alt="logo"
               />

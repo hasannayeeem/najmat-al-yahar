@@ -16,17 +16,17 @@ const Home = () => {
   return (
     <div>
       <Banner />
+      <Notice />
       {/* <Guide /> */}
       <Companies></Companies>
       {/* <Cards /> */}
       {/* <Statistics /> */}
       {/* <Engineers /> */}
       {/* <Projects /> */}
-      <Notice />
       {/* <Testimonials /> */}
       {/* <Reviews /> */}
-      <AboutUs></AboutUs>
       <Directors/>
+      <AboutUs></AboutUs>
       <Contact />
       <NewsLetter />
     </div>

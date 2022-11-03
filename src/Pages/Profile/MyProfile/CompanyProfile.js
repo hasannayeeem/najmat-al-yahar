@@ -35,7 +35,7 @@ const [companies, setCompanies] = useState([]);
 <h1 className="text-sm  text-center lg:px-24 mt-3">In this era of mass production, as it is very hard to stand out with one product, <span className="hover:text-yellow-500">saheda group </span>
 focuses on making the best in all sectors.</h1>
 
-<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 lg:px-2 px-12 pt-8 pb-24'>
+<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 lg:px-2 px-12 pt-8 pb-24'>
                 {
                     companies.map(company => <Company
                         key={company._id}
