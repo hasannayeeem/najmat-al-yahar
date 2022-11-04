@@ -53,3 +53,20 @@
 .nav-link:hover::after {
   width: 100%;
 }
+.smNav-item {
+  position: relative;
+}
+.smNav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  transition: all 0.7s;
+  background: red;
+  border-radius: 5px;
+}
+.smNav-link:hover::after {
+  width: 100%;
+}

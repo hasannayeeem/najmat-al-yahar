@@ -104,16 +104,16 @@ const Header = () => {
 								isActive ? 'activeLink' : 'navLink'
 							}
 							to={'/'}
-						>
-							Home
+						><li className=" smNav-item inline-block smNav-link">Home</li>
+							
 						</NavLink>
 						<NavLink
 							className={({ isActive }) =>
 								isActive ? 'activeLink' : 'navLink'
 							}
 							to={'/about'}
-						>
-							About
+						><li className=" smNav-item py-2 inline-block smNav-link">About</li>
+							
 						</NavLink>
 						<NavLink
 							className={({ isActive }) =>
@@ -121,15 +121,15 @@ const Header = () => {
 							}
 							to={'/companies'}
 						>
-							Our Sister Concerns
+							<li className=" smNav-item inline-block smNav-link">Our Sister Concerns</li>
 						</NavLink>
 						<NavLink
 							className={({ isActive }) =>
 								isActive ? 'activeLink' : 'navLink'
 							}
 							to={'/contact-us'}
-						>
-							Contact Us
+						><li className=" smNav-item inline-block py-2 smNav-link">Contact Us</li>
+							
 						</NavLink>
 						{/* <NavLink
 							className={({ isActive }) =>

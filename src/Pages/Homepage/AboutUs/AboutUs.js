@@ -42,7 +42,7 @@ const AboutUs = () => {
         <div className="w-11/12 sm:w-6/12 text-center sm:text-left sm:mt-0 mt-8">
           {/* <h5 className="font-semibold">About Us</h5> */}
 
-          <p className="py-3">
+          <p className="py-3 text-justify">
           Our vision for the future is clear. We want to be the best, the first and the only choice for our customers in the service space, ensuring top quality services and best quality products. The new learning’s each day and abreast of advancements helps us to keep pace with the global developments, while we Endeavour to remain true to our core values in conducting our business activities. We at Saheda Group value our customers and take pride and ownership in delivering the best to our customers.
  
  We are obligated to provide honest, ethical and professional dealings with our customers, employees, and also with our vendors, subcontractors, clients, banks, agencies, etc. With the patronage of our customers and with the co-operation of our employees and stakeholders, we are able to keep the focus and move forward. I like to thank all for their committed and dedicated efforts contributed towards the achievement of the company’s goals. I am confident that we will continue to exceed the expectations, deliver value to our prestigious clients and expand our foothold into other geographies.
