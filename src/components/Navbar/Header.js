@@ -69,7 +69,7 @@ const Header = () => {
               <h1 className={`${darkMode ? ` text-gray-400` : `text-black`} text-[14px] font-extrabold ml-3 quality-first`}>
                 "Your Satisfactions is our priority"
               </h1>
-              <p className={`${darkMode ? ` text-gray-400` : `text-black`} ml-[-0.5rem] mr-2 text-[12px] sk-akij-uddin`}>
+              <p className={`${darkMode ? ` text-gray-400` : `text-black`} ml-[-0.5rem] mr-2 text-[12px] sk-akij-uddin tracking-widest`}>
                 - SAHEDA-GROUP
               </p>
             </div>
