@@ -45,7 +45,7 @@ const Header = () => {
   return (
     <div className="fixed top-0 z-50 lg:w-full">
 
-      <div className="bg-white">
+      <div className="bg-[#FFF5EE]">
 		<div className="lg:max-w-[1210px]  m-auto pb-1 px-3 hidden lg:block lg:flex justify-between">
         <div className="flex items-center">
           <img className="w-24 h-24 p-2" src={logo_v3} alt="" />

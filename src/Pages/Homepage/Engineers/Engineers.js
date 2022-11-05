@@ -8,7 +8,7 @@ const Engineers = () => {
   return (
     <div className="pt-20">
       <h2 style={{fontFamily:"'Rajdhani', sans-serif"}} className={`${darkMode && "text-white"} uppercase text-3xl font-bold text-center py-3`}>
-        <span className="text-[#f61a1a]">Our</span> Engineers <span className="text-[#f61a1a]">and</span> Architecture's
+        <span className="text-[#f61a1a]">Management </span> Team
       </h2>
       <div className='flex justify-center'>
 				<div className=' rounded-md w-32 h-1 bg-[#f61a1a]'></div>

@@ -23,43 +23,43 @@ const Engineer = () => {
   return (
     <div className="p-6 md:px-16">
       <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
-        freeMode={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 50,
-          },
-        }}
-        modules={[FreeMode, Pagination]}
-        className="mySwiper "
-      >
+          slidesPerView={1}
+          spaceBetween={30}
+          freeMode={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+          }}
+          modules={[Autoplay, FreeMode, Pagination]}
+          className="mySwiper "
+        >
         {engineers?.map((engineer) => {
-          const { picture, name, surname, _id } = engineer;
+          const { picture, name, rule, _id } = engineer;
           return (
             <SwiperSlide key={_id}>
               <div className="my-10">
                 <div className={`${darkMode && "text-white"} engCard shadow-xl`}>
                   <img src={picture} alt="Person" className="card__image" />
-                  <p className="card__name">{name}</p>
+                  <p className="card__name font-bold">{name}</p>
                   <div className="">
                     {/* <div className="grid-child-posts">902 Post</div>
 
                     <div className="grid-child-followers">1300 Likes</div> */}
-                    <p>{surname}</p>
+                    <p>{rule}</p>
                   </div>
                   <ul className="social-icons">
                     <li>

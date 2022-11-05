@@ -22,7 +22,7 @@
   /* color: white; */
 }
 .engCard:hover{
-  box-shadow: 1px 1px 25px rgb(255, 189, 189), -1px -1px 25px yellow;
+  box-shadow: 1px 1px 25px rgb(255, 189, 189), -1px -1px 25px rgb(232, 232, 202);
   
 }
 
@@ -35,7 +35,7 @@
   height: 160px;
   width: 160px;
   border-radius: 50%;
-  border: 5px solid #272133;
+  border: 5px solid #ffbb00;
   margin-top: 20px;
 
   /* box-shadow: 0 10px 50px rgba(13, 148, 137, 0.672); */
@@ -75,15 +75,15 @@
 .draw-border:hover::before,
 .draw-border:hover::after {
   border-color: red;
-  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
-  transition: border-color 0s, width 0.25s, height 0.25s;
+  -webkit-transition: border-color 0s, width 0.20s, height 0.20s;
+  transition: border-color 0s, width 0.20s, height 0.20s;
   width: 100%;
   height: 100%;
 }
 
 .draw-border:hover::before {
-  -webkit-transition-delay: 0s, 0s, 0.25s;
-  transition-delay: 0s, 0s, 0.25s;
+  -webkit-transition-delay: 0s, 0s, 0.20s;
+  transition-delay: 0s, 0s, 0.20s;
 }
 
 .draw-border:hover::after {

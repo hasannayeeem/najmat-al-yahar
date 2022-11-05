@@ -93,12 +93,12 @@ const Footer = () => {
               <ul className="space-y-1">
                 <li>
                   <Link rel="" to="/" className="hover:text-yellow-500">
-                    Traveling
+                   Constructing
                   </Link>
                 </li>
                 <li>
                   <Link rel="noopener noreferrer" className="hover:text-yellow-500" to="/">
-                    Constructing
+                     Traveling
                   </Link>
                 </li>
                 <li>
@@ -109,6 +109,16 @@ const Footer = () => {
                 <li>
                   <Link rel="noopener noreferrer" className="hover:text-yellow-500" to="/">
                     IT
+                  </Link>
+                </li>
+                <li>
+                  <Link rel="noopener noreferrer" className="hover:text-yellow-500" to="/">
+                    Parking
+                  </Link>
+                </li>
+                <li>
+                  <Link rel="noopener noreferrer" className="hover:text-yellow-500" to="/">
+                    Car Washing
                   </Link>
                 </li>
               </ul>
