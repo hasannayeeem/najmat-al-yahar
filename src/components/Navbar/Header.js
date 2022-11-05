@@ -67,7 +67,7 @@ const Header = () => {
           <div className="flex items-center">
             <div className="relative p-2 ml-2">
               <h1 className={`${darkMode ? ` text-gray-400` : `text-black`} text-[14px] font-extrabold ml-3 quality-first`}>
-                " Quality First "
+                "Your Satisfactions is our priority"
               </h1>
               <p className={`${darkMode ? ` text-gray-400` : `text-black`} ml-[-0.5rem] mr-2 text-[12px] sk-akij-uddin`}>
                 - SAHEDA-GROUP
