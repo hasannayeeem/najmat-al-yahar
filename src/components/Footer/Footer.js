@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaLocationArrow, FaTwitter, FaYoutube } from "react-icons/fa";
 import logo_v2 from "../../Assest/images/sahedaFooter.png";
+import { MdOutlineLocationOn } from "react-icons/md";
 const Footer = () => {
   const date = new Date().getFullYear();
   // console.log(date);
@@ -19,7 +20,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className="lg:w-2/12 w-full bg-warning">
-          <ul className="justify-evenly lg:flex-col flex-row  flex">
+          <ul className="justify-evenly lg:flex-col flex-row items-center  flex">
             <li className="hover:bg-red-700 block px-3 pb-2 pt-3">
               <a href="/">
                 <svg
@@ -151,6 +152,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="space-y-3 ">
+              <div>
               <h3 className="uppercase dark:text-gray-50">Founder</h3>
               <ul className="space-y-1">
                 <li>
@@ -169,6 +171,18 @@ const Footer = () => {
                     <FaYoutube className="ml-4 pointer hover:text-white"></FaYoutube></a>
                 </li>
               </ul>
+              </div>
+              <div className="pt-4">
+              <h3 className="uppercase dark:text-gray-50">Company Location </h3>
+              <MdOutlineLocationOn className="text-2xl my-1 text-center ml-12 text-yellow-500 block"></MdOutlineLocationOn>
+              <ul className="space-y-1">
+                <li>
+                  <Link rel="noopener noreferrer" className="hover:text-yellow-500"  to="/">
+                  1502 Mai Tower, 15 floor , Al Nahda 1, Dubai, United Arab Emirates
+                  </Link>
+                </li>
+              </ul>
+              </div>
             </div>
           </div>
         </div>

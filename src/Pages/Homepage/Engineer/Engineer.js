@@ -52,7 +52,7 @@ const Engineer = () => {
           return (
             <SwiperSlide key={_id}>
               <div className="my-10">
-                <div className={`${darkMode && "text-white"} engCard shadow-xl`}>
+                <div className={`${darkMode && "text-white"} engCard pt-8 shadow-xl`}>
                   <img src={picture} alt="Person" className="card__image" />
                   <p className="card__name font-bold">{name}</p>
                   <div className="">
@@ -83,7 +83,7 @@ const Engineer = () => {
                       </a>
                     </li>
                   </ul>
-                  <div className="flex">
+                  {/* <div className="flex">
                     <button
                       className={`${
                         darkMode ? "bg-transparent text-teal-600" : "bg-white"
@@ -98,7 +98,7 @@ const Engineer = () => {
                     >
                       massage
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </SwiperSlide>

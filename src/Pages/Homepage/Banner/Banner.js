@@ -16,7 +16,7 @@ const Banner = () => {
         >
           <div className="lg:h-full h-80 absolute top-0 left-0 right-0 z-0">
             <img
-              src="https://bangladeshpost.net/webroot/uploads/featureimage/2019-12/5df111b34395a.jpg"
+              src="https://sahedagroup.net/assets/images/slider_1.jpg"
               alt=""
               className="w-full lg:h-full h-80 object-cover opacity-20"
             />
@@ -36,10 +36,10 @@ const Banner = () => {
           </div>
         </section>
         <div className="absolute flex justify-between transform -translate-y-1/2 left-6 right-6 top-1/2">
-          <a href="#slide3" className="text-3xl text-white">
+          <a href="#slide3" className="text-3xl hidden lg:block text-white">
             ❮
           </a>
-          <a href="#slide2" className="text-3xl text-white">
+          <a href="#slide2" className="text-3xl hidden lg:block  text-white">
             ❯
           </a>
         </div>
@@ -53,7 +53,7 @@ const Banner = () => {
         >
           <div className="lg:h-full h-80 absolute top-0 left-0 right-0 z-0">
             <img
-              src="https://bangladeshpost.net/webroot/uploads/featureimage/2019-12/5df111b34395a.jpg"
+              src="https://sahedagroup.net/assets/images/slider_2.jpg"
               alt=""
               className="w-full lg:h-full h-80 object-cover opacity-20"
             />
@@ -73,10 +73,10 @@ const Banner = () => {
           </div>
         </section>
         <div className="absolute flex justify-between transform -translate-y-1/2 left-6 right-6 top-1/2">
-          <a href="#slide1" className="text-3xl text-white">
+          <a href="#slide1" className="text-3xl hidden lg:block text-white">
             ❮
           </a>
-          <a href="#slide3" className="text-3xl text-white">
+          <a href="#slide3" className="text-3xl hidden lg:block text-white">
             ❯
           </a>
         </div>
@@ -90,7 +90,7 @@ const Banner = () => {
         >
           <div className="lg:h-full h-80 absolute top-0 left-0 right-0 z-0">
             <img
-              src="https://bangladeshpost.net/webroot/uploads/featureimage/2019-12/5df111b34395a.jpg"
+              src="https://sahedagroup.net/assets/images/slider_3.jpg"
               alt=""
               className="w-full lg:h-full h-80 object-cover opacity-20"
             />
@@ -110,10 +110,10 @@ const Banner = () => {
           </div>
         </section>
         <div className="absolute flex justify-between transform -translate-y-1/2 left-6 right-6 top-1/2">
-          <a href="#slide2" className="text-3xl text-white">
+          <a href="#slide2" className="text-3xl hidden lg:block text-white">
             ❮
           </a>
-          <a href="#slide1" className="text-3xl text-white">
+          <a href="#slide1" className="text-3xl hidden lg:block text-white">
             ❯
           </a>
         </div>

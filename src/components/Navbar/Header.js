@@ -52,13 +52,13 @@ const Header = () => {
         </div>
         <div className="text-[14px] flex gap-5">
           <div className="flex items-center">
-           <FontAwesomeIcon className="text-blue-500 text-xl p-2 border-2 rounded-full border-blue-100 m-4" icon={faPhone}></FontAwesomeIcon>
+           <a href="tel:+97143485089"><FontAwesomeIcon className="text-blue-500 text-xl p-2 border-2 rounded-full border-blue-100 m-4" icon={faPhone}></FontAwesomeIcon></a>
             <div>
               <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`}>Telephone: +97143485089</p>
             </div>
           </div>
           <div className="flex items-center">
-          <FontAwesomeIcon className="text-blue-500 text-xl p-2 border-2 rounded-full border-blue-100 m-4" icon={faEnvelope}></FontAwesomeIcon>
+          <a href="mailto:sadikurr50@sahedagroup.net"><FontAwesomeIcon className="text-blue-500 text-xl p-2 border-2 rounded-full border-blue-100 m-4" icon={faEnvelope}></FontAwesomeIcon></a>
             <div>
               <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`}>Email us</p>
               <p className={`${darkMode ? ` text-gray-400` : `text-black`}  font-extrabold`}>sadikurr50@sahedagroup.net</p>
