@@ -15,7 +15,7 @@ const NewsLetter = () => {
       <div
         style={{
           backgroundImage:
-            "url(https://i.ibb.co/fpXYGwM/abstract-architectural-background-building-lines-futuristic-backdrop-architecture-building-construct.jpg)",
+            "url(https://sahedagroup.net/assets/images/bg_subscription.jpg)",
           fontFamily: "Oswald",
         }}
         className="h-[300px]  sm:h-[400px] text-center bg-center bg-cover  w-full px-2 rounded-md sm:rounded-none sm:px-0  flex justify-center items-center text-white Container"

@@ -6,7 +6,7 @@ const Banner = () => {
   const [darkMode] = useContext(DarkModeContext);
 
   return (
-    <div className="carousel w-full lg:mt-36">
+    <div className="carousel w-full lg:mt-16">
       <div id="slide1" className="carousel-item relative w-full">
 	  <section
           className={`${
@@ -24,7 +24,7 @@ const Banner = () => {
 
           <div className="lg:w-3/4 xl:w-7/12 relative h-100 z-10 lg:mt-16">
             <div>
-              <h1 className="text-white text-3xl sm:text-4xl -z-50 font-bold leading-tight">
+              <h1 className="text-white text-xl lg:text-4xl -z-50 font-bold leading-tight">
                 Welcome to Building Contraction Innovative for a better Tomorrow
               </h1>
               <p className="text-blue-100 md:text-lg leading-snug mt-2 sm:px-0 px-5 sm:mt-4">
@@ -61,7 +61,7 @@ const Banner = () => {
 
           <div className="lg:w-3/4 xl:w-7/12 relative z-10 h-100 lg:mt-16">
             <div>
-              <h1 className="text-white text-3xl sm:text-4xl -z-50 font-bold leading-tight">
+              <h1 className="text-white ext-xl lg:text-4xl -z-50 font-bold leading-tight">
                 Welcome to Building Contraction Innovative for a better Tomorrow
               </h1>
               <p className="text-blue-100 md:text-lg leading-snug mt-2 sm:px-0 px-5 sm:mt-4">
@@ -98,7 +98,7 @@ const Banner = () => {
 
           <div className="lg:w-3/4 xl:w-7/12 relative z-10 h-100 lg:mt-16">
             <div>
-              <h1 className="text-white text-3xl sm:text-4xl -z-50 font-bold leading-tight">
+              <h1 className="text-white ext-xl lg:text-4xl -z-50 font-bold leading-tight">
                 Welcome to Building Contraction Innovative for a better Tomorrow
               </h1>
               <p className="text-blue-100 md:text-lg leading-snug mt-2 sm:px-0 px-5 sm:mt-4">

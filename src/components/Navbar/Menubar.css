@@ -1,5 +1,5 @@
-/* .quality-first::before {
-  background: #008aff;
+.quality-first::before {
+  background: #fff;
   top: 0;
   position: absolute;
   left: 0;
@@ -11,14 +11,14 @@
 .quality-first::after {
   content: "";
   position: absolute;
-  background: #2e6abf;
+  background: #fff;
   width: 3px;
   height: 30px;
   top: 0;
   left: 0;
 }
 .sk-akij-uddin::before {
-  background: #008aff;
+  background: #fff;
   right: 0;
   position: absolute;
   width: 3px;
@@ -30,7 +30,7 @@
 .sk-akij-uddin::after {
   content: "";
   position: absolute;
-  background: #008aff;
+  background: #fff;
   width: 40px;
   height: 3px;
   bottom: 2px;
@@ -47,7 +47,7 @@
   height: 2px;
   width: 0;
   transition: all 0.7s;
-  background: blue;
+  background: white;
   border-radius: 5px;
 }
 .nav-link:hover::after {
@@ -69,4 +69,4 @@
 }
 .smNav-link:hover::after {
   width: 100%;
-} */
+}

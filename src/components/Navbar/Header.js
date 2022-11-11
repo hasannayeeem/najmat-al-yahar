@@ -70,7 +70,7 @@ const Header = () => {
                 "Your Satisfactions is our priority"
               </h1>
               <p className={`${darkMode ? ` text-gray-400` : `text-black`} ml-[-0.5rem] mr-2 text-[12px] sk-akij-uddin tracking-widest`}>
-                - SAHEDA-GROUP
+                SAHEDA-GROUP
               </p>
             </div>
           </div>
@@ -183,7 +183,7 @@ const Header = () => {
 					<div className='hidden md:block w-full md:w-auto' id='menu'>
 						<nav className='w-full bg-white text-black  md:bg-transparent rounded shadow-lg py-0 mt-4 text-center md:p-0 md:mt-0 md:shadow-none'>
 							<ul className='md:flex items-center'>
-								<li className="nav-item">
+							<li className="nav-item">
 									<Link
 										to={'/'}
 										className={`nav-link py-1 inline-block ${colorChange ? 'text-black' :''} md:text-white lg:px-2 md:hidden lg:block font-semibold`}

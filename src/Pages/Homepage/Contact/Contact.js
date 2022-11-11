@@ -7,7 +7,7 @@ import toast from "react-hot-toast";
 import { useLocation } from "react-router-dom";
 
 const Contact = () => {
-  const homePage = useLocation().pathname === '/';
+  const homePage = useLocation().pathname === "/";
   const [darkMode] = useContext(DarkModeContext);
   const {
     register,
@@ -18,7 +18,6 @@ const Contact = () => {
   const form = useRef();
 
   const sendEmail = (data) => {
-    
     // console.log(data)
     // let emailData = {
     //     email: data.email,
@@ -28,10 +27,10 @@ const Contact = () => {
     // console.log(emailData);
     emailjs
       .sendForm(
-        "endgame_project",
-        "endgame_project",
+        "najmatAlYahar",
+        "najmatAlYahar",
         form.current,
-        "izhjd_XATNZhThYrx"
+        "qhiLg-Y8V9dNGo9JE"
       )
       .then(
         (res) => {
@@ -48,7 +47,12 @@ const Contact = () => {
   };
 
   return (
-    <section className={`flex  ${homePage ? '' : 'lg:mt-[170px]'} mt-20 justify-center items-center`} id="contactUs">
+    <section
+      className={`flex  ${
+        homePage ? "" : "lg:mt-[170px]"
+      } mt-20 justify-center items-center`}
+      id="contactUs"
+    >
       <div className="w-[60%] px-3 hidden md:block">
         <img className="w-full" src={contact} alt="" />
       </div>
@@ -160,8 +164,7 @@ const Contact = () => {
                     >
                       Message
                     </label>
-                    <div 
-                    contentEditable
+                    <textarea
                       {...register("message", {
                         required: {
                           value: true,
@@ -174,8 +177,8 @@ const Contact = () => {
                       })}
                       id="message"
                       name="message"
-                      className="lg:max-w-[700px] lg:min-w-[600px] max-w-[330px] bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 min-h-[16px] overflow-x-hidden overflow-y-auto max-h-[100px] text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                    ></div>
+                      className="w-full bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    ></textarea>
                   </div>
                   <label>
                     {errors.message?.type === "required" && (

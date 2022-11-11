@@ -1,4 +1,4 @@
-/* #menu-toggle:checked+#menu {
+#menu-toggle:checked+#menu {
     display: block;
 }
 
@@ -13,7 +13,6 @@ nav li a:hover{
     margin: 7px auto;
 }
 .mobile-manu a:hover{
-    color: blue;
-    font-weight: 700;
+    color: rgb(15, 131, 139);
 
-} */
+}

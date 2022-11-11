@@ -77,11 +77,6 @@ const Engineer = () => {
                         <BsTwitter />
                       </a>
                     </li>
-                    <li>
-                      <a href="/">
-                        <BsBehance />
-                      </a>
-                    </li>
                   </ul>
                   {/* <div className="flex">
                     <button

@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
         <div className="lg:w-2/12 w-full bg-warning">
           <ul className="justify-evenly lg:flex-col flex-row items-center  flex">
-            <li className="hover:bg-red-700 block px-3 pb-2 pt-3">
+            <li className="hover:bg-red-700 block  px-[21px] lg:pb-2 pb-3 pt-3">
               <a href="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@ const Footer = () => {
                 </svg>
               </a>
             </li>
-            <li className="hover:bg-red-700 block px-3 py-2">
+            <li className="hover:bg-red-700 block px-[21px] py-3">
               <a href="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ const Footer = () => {
                 </svg>
               </a>
             </li>
-            <li className="hover:bg-red-700 block px-3 py-2">
+            <li className="hover:bg-red-700 block px-[21px] py-3">
               <a href="/">
                 <svg
                   viewBox="0 0 24 24"
@@ -57,7 +57,7 @@ const Footer = () => {
                 </svg>
               </a>
             </li>
-            <li className="hover:bg-red-700 block px-3 py-3">
+            <li className="hover:bg-red-700 block px-[21px] py-3">
               <a href="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ const Footer = () => {
                 </svg>
               </a>
             </li>
-            <li className="hover:bg-red-700 block px-3 py-2">
+            <li className="hover:bg-red-700 block px-[21px] py-3">
               <a href="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

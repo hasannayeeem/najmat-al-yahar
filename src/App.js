@@ -43,6 +43,9 @@ import Najmat from "./Pages/Homepage/Companies/Najmat";
 import Sadikur from "./Pages/Homepage/Companies/Sadikur";
 import Pervez from "./Pages/Homepage/Companies/Pervez";
 import Rayhan from "./Pages/Homepage/Companies/Rayhan";
+import Navbar from "./components/Navbar/Navbar";
+import Menubar from "./components/Navbar/Menubar";
+import Engineers from "./Pages/Homepage/Engineers/Engineers";
 
 export const DarkModeContext = createContext("");
 const queryClient = new QueryClient();
@@ -77,8 +80,9 @@ function App() {
         <QueryClientProvider client={queryClient}>
           <DarkModeContext.Provider value={[darkMode, setDarkMode]}>
             <section className={`${darkMode && "dark-theme"} duration-300`}>
-              <Header></Header>
+              {/* <Header></Header> */}
               {/* <Navbar /> */}
+              <Menubar />
               <Toaster></Toaster>
               <Routes>
                 <Route path="/" element={<Home />} />
@@ -87,9 +91,10 @@ function App() {
                 {/* <Route path="/companies/:id" element={<CompanyDetails />} /> */}
                 <Route path="/blogs" element={<Blog />} />
                 <Route path="/services" element={<Cards />} />
-                <Route path="/media" element={<Projects />} />
+                <Route path="/team" element={<Engineers />} />
+                {/* <Route path="/media" element={<Projects />} /> */}
                 <Route path="/contact-us" element={<Contact/>} />
-                <Route path="/dashboard" element={<Dashboard />}>
+                {/* <Route path="/dashboard" element={<Dashboard />}>
                   <Route index element={<Dashboard1 />}></Route>
                   <Route path="users" element={<RequireAdmin><Users /></RequireAdmin>}></Route>
                   <Route path="addReview" element={<RequireAuth><AddReview /></RequireAuth>}></Route>
@@ -98,13 +103,13 @@ function App() {
                     element={<ManageEngineers />}
                   ></Route>
                   <Route path="constructors" element={<Constructors />}></Route>
-                  <Route path="manageBooks" element={<RequireAdmin><ManageBooks /></RequireAdmin>}></Route>
+                  <Route path="manageBooks" element={<RequireAdmin><ManageBooks /></RequireAdmin>}></Route> */}
                   {/* <Route path="orders" element={<RequireAdmin><Orders /></RequireAdmin>}></Route> */}
-                  <Route
+                  {/* <Route
                     path="manageEngineers"
                     element={<RequireAdmin><ManageEngineers /></RequireAdmin>}
                   ></Route>
-                </Route>
+                </Route> */}
                 <Route path="/user/:id" element={<RequireAdmin><UserDetails /></RequireAdmin>} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
