@@ -12,7 +12,7 @@ const AboutUs = () => {
     <div
       id="about"
       style={{ fontFamily: "'Rajdhani', sans-serif" }}
-      className={`${darkMode && "text-white"} ${homePage ? '' : 'lg:mt-[170px]'} lg:mb-8 px-10 sm:px-20`}
+      className={`${darkMode && "text-white"} ${homePage ? 'mt-16' : 'lg:mt-[150px]'} lg:mb-8 px-10 sm:px-20`}
     >
       <h2
         className={`${

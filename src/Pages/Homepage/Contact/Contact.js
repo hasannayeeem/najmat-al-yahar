@@ -49,7 +49,7 @@ const Contact = () => {
   return (
     <section
       className={`flex  ${
-        homePage ? "" : "lg:mt-[170px]"
+        homePage ? "" : "lg:mt-[150px]"
       } mt-20 justify-center items-center`}
       id="contactUs"
     >

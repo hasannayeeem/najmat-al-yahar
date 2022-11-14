@@ -6,7 +6,7 @@ const Banner = () => {
   const [darkMode] = useContext(DarkModeContext);
 
   return (
-    <div className="carousel w-full lg:mt-16">
+    <div className="carousel w-full lg:mt-0">
       <div id="slide1" className="carousel-item relative w-full">
 	  <section
           className={`${

@@ -46,6 +46,7 @@ import Rayhan from "./Pages/Homepage/Companies/Rayhan";
 import Navbar from "./components/Navbar/Navbar";
 import Menubar from "./components/Navbar/Menubar";
 import Engineers from "./Pages/Homepage/Engineers/Engineers";
+import Testbar from "./components/Navbar/Testbar";
 
 export const DarkModeContext = createContext("");
 const queryClient = new QueryClient();
@@ -80,9 +81,10 @@ function App() {
         <QueryClientProvider client={queryClient}>
           <DarkModeContext.Provider value={[darkMode, setDarkMode]}>
             <section className={`${darkMode && "dark-theme"} duration-300`}>
-              {/* <Header></Header> */}
+              <Header></Header>
               {/* <Navbar /> */}
-              <Menubar />
+              {/* <Menubar /> */}
+              {/* <Testbar /> */}
               <Toaster></Toaster>
               <Routes>
                 <Route path="/" element={<Home />} />

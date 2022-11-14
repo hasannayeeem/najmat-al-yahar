@@ -4,7 +4,7 @@ import logo from '../../Assest/images/sahedaFooter.png'
 
 const Profile = () => {
   return (
-    <section className="lg:mt-[150px] ">
+    <section className="lg:mt-[100px] ">
       <div className=" flex flex-col justify-center md:flex-row">
         <div className="md:w-1/3 w-full">
           <ul className="menu p-4 overflow-y-auto md:w-80 bg-base-100 text-base-content border m-3 shadow mx-auto">

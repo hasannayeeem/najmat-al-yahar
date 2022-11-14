@@ -1,12 +1,14 @@
 import React, { useContext } from "react";
+import { useLocation } from "react-router-dom";
 import { DarkModeContext } from "../../../App";
 import Engineer from "../Engineer/Engineer";
 
 const Engineers = () => {
   const [darkMode, setDarkMode] = useContext(DarkModeContext)
 
+  const homePage = useLocation().pathname === "/";
   return (
-    <div className="pt-20">
+    <div className={`${homePage ? 'pt-20' : 'pt-28'}`}>
       <h2 style={{fontFamily:"'Rajdhani', sans-serif"}} className={`${darkMode && "text-white"} uppercase text-3xl font-bold text-center py-3`}>
         <span className="text-[#f61a1a]">Management </span> Team
       </h2>

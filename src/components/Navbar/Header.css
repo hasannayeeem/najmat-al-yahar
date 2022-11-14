@@ -1,4 +1,4 @@
-/* .quality-first::before {
+.quality-first::before {
   background: #008aff;
   top: 0;
   position: absolute;
@@ -69,4 +69,4 @@
 }
 .smNav-link:hover::after {
   width: 100%;
-} */
+}
