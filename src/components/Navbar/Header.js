@@ -95,6 +95,14 @@ const Header = () => {
           </NavLink>
           <NavLink
             className={({ isActive }) => (isActive ? "activeLink" : "navLink")}
+            to={"/team"}
+          >
+            <li className=" smNav-item inline-block py-2 smNav-link">
+              Management Team
+            </li>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "activeLink" : "navLink")}
             to={"/contact-us"}
           >
             <li className=" smNav-item inline-block py-2 smNav-link">
@@ -199,20 +207,20 @@ const Header = () => {
 								</li> */}
               <li className="md:ml-2.5 md:hidden lg:block nav-item">
                 <Link
-                  to={"/contact-us"}
-                  className="nav-link py-1 inline-block md:text-black md:px-2 font-semibold"
-                  href="#"
-                >
-                  Contact Us{" "}
-                </Link>
-              </li>
-              <li className="md:ml-2.5 md:hidden lg:block nav-item">
-                <Link
                   to={"/team"}
                   className="nav-link py-1 inline-block md:text-black md:px-2 font-semibold"
                   href="#"
                 >
                   Management Team{" "}
+                </Link>
+              </li>
+              <li className="md:ml-2.5 md:hidden lg:block nav-item">
+                <Link
+                  to={"/contact-us"}
+                  className="nav-link py-1 inline-block md:text-black md:px-2 font-semibold"
+                  href="#"
+                >
+                  Contact Us{" "}
                 </Link>
               </li>
 
