@@ -16,7 +16,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { DarkModeContext } from "../../App";
 import { signOut } from "firebase/auth";
 import { FaLocationArrow } from "react-icons/fa";
-import logo_v3 from "../../Assest/images/shaheda.png";
+import logo_v3 from "../../Assest/images/saheda_logo.png";
 import auth from "../../firebase.init";
 import useRole from "../../hooks/useRole";
 import Loading from "../../Shared/Loading/Loading";
@@ -161,10 +161,10 @@ const Header = () => {
         <div className="hidden md:block w-full md:w-auto" id="menu">
           <nav className="justify-around w-full flex text-black  md:bg-transparent rounded shadow-lg py-0 mt-4 text-center md:p-0 md:mt-0 md:shadow-none">
             <div className="flex items-center lg:mr-4">
-              <img className="w-12 h-12 p-2" src={logo_v3} alt="" />
+              <img className=" mr-2" src={logo_v3} alt="" />
 			  <Link to={`/`}>
-			  <span className="text-blue-500 font-bold">Saheda</span>{" "}
-              <span className="text-red-600 font-bold">Group</span>
+			  <span className="text-[#1e3b71] font-[900] uppercase">Saheda</span>{" "}
+              <span className="text-[#ed2024] uppercase font-[900]">Group</span>
 			  </Link>
             </div>
             <ul className="md:flex items-center mx-4">
