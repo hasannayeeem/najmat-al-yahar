@@ -52,7 +52,7 @@ const Header = () => {
 		colorChange && (darkMode ? "bg-white" : "bg-white")} ${
 		location === "/properties" ? "z-10" : "z-50 "
 	  }`}>
-      <div className={`flex ${colorChange ? 'bg-white' : 'bg-[#f5d9b1]'}  items-center w-screen justify-between lg:justify-around py-4 sm:px-2 px-5`}>
+      <div className={`flex ${colorChange ? 'bg-white' : 'bg-[#f5d9b1]'}  items-center w-screen justify-between lg:justify-around py-2 sm:px-2 px-5 border-b-2 border-[#4563]`}>
         <span
           onClick={navBtnHndle}
           className="md:hidden text-black text-left text-2xl cursor-pointer"
@@ -161,7 +161,7 @@ const Header = () => {
         <div className="hidden md:block w-full md:w-auto" id="menu">
           <nav className="justify-around w-full flex text-black  md:bg-transparent rounded shadow-lg py-0 mt-4 text-center md:p-0 md:mt-0 md:shadow-none">
             <div className="flex items-center lg:mr-4">
-              <img className=" mr-2" src={logo_v3} alt="" />
+              <img className=" mr-2 w-[56px] h-[56px]" src={logo_v3} alt="" />
 			  <Link to={`/`}>
 			  <span className="text-[#1e3b71] font-[900] uppercase">Saheda</span>{" "}
               <span className="text-[#ed2024] uppercase font-[900]">Group</span>
@@ -324,7 +324,7 @@ const Header = () => {
                   className="text-black text-md p-1"
                   icon={faEnvelope}
                 ></FontAwesomeIcon>
-                <span className="text-sm">sadikur50@sahedagroup.net</span>
+                <span className="text-sm">sadikurr50@sahedagroup.net</span>
               </a>
             </div>
             <div
