@@ -18,7 +18,7 @@ const Profile = () => {
               /> <span className="mt-8 text-2xl">Our Sister Concerns</span>
               </Link>
             </li>
-            <li className="w-full font-semibold">
+            {/* <li className="w-full font-semibold">
               <Link to="/companies/najmat">
               <img
                 src="https://sahedagroup.net/assets/images/najmat.png"
@@ -27,7 +27,7 @@ const Profile = () => {
               />
                 Najmat Al Yahar Building Contracting L.L.C
               </Link>
-            </li>
+            </li> */}
             <li className="w-full font-semibold">
               <Link to="/companies/sadikur">
                 <img
@@ -48,7 +48,7 @@ const Profile = () => {
                 Hasaim international
               </Link>
             </li>
-            <li className="w-full font-semibold">
+            {/* <li className="w-full font-semibold">
               
               <Link to="/companies/parvez" className="flex">
                 <img
@@ -57,7 +57,7 @@ const Profile = () => {
                 alt="logo"
               />Mohammed Parvez Information Technology
               </Link>
-            </li>
+            </li> */}
             <li className="w-full font-semibold">
               
               <Link to="/companies/rayhan" className="flex">

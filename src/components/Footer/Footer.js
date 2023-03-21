@@ -92,11 +92,11 @@ const Footer = () => {
                 Services
               </h3>
               <ul className="space-y-1">
-                <li>
+                {/* <li>
                   <Link rel="" to="/" className="hover:text-yellow-500">
                    Constructing
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link rel="noopener noreferrer" className="hover:text-yellow-500" to="/">
                      Traveling
@@ -107,11 +107,11 @@ const Footer = () => {
                     Consulting
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link rel="noopener noreferrer" className="hover:text-yellow-500" to="/">
                     IT
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link rel="noopener noreferrer" className="hover:text-yellow-500" to="/">
                     Parking
@@ -129,14 +129,14 @@ const Footer = () => {
                 Companies
               </h3>
               <ul className="space-y-1">
-                <li>
+                {/* <li>
                   <Link rel="noopener noreferrer" className="hover:text-yellow-500"  to="/companies/najmat">
                   <span className="block ">Nazmat Al Yahar </span>Building Contacting L.L.C
                   </Link>
-                </li>
+                </li> */}
                 <li>
-                  <Link rel="" className="hover:text-yellow-500" to="/companies/parvez">
-                  <span className="block ">Mohammed Parvez</span> Information Technology
+                  <Link rel="" className="hover:text-yellow-500" to="/companies/rayhan">
+                  <span className="block ">Rayhan Uddin</span> Parking Car Washing
                   </Link>
                 </li>
                 <li>
